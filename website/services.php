@@ -2,7 +2,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Services</title> <!-- Bu kısımda sayfa başlığı girilecek -->
+    <title>Hizmetlerimiz</title> <!-- Bu kısımda sayfa başlığı girilecek -->
 
     <?php include('head-req.php'); ?>
 </head>
@@ -18,12 +18,12 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="banner-heading">
-                            <h1 class="banner-title">Service</h1>
+                            <h1 class="banner-title">Hizmetlerimiz</h1>
                             <nav aria-label="breadcrumb">
                                 <ol class="breadcrumb justify-content-center">
-                                    <li class="breadcrumb-item"><a href="#">Home</a></li>
-                                    <li class="breadcrumb-item"><a href="#">Services</a></li>
-                                    <li class="breadcrumb-item active" aria-current="page">All Services</li>
+                                    <li class="breadcrumb-item"><a href="#">Anasayfa</a></li>
+                                    <li class="breadcrumb-item"><a href="#">Hizmetlerimiz</a></li>
+                                    <li class="breadcrumb-item active" aria-current="page">Aktif Hizmetler</li>
                                 </ol>
                             </nav>
                         </div>

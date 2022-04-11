@@ -2,7 +2,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>About Us</title>
+    <title>Hakkımızda</title>
     <?php include('head-req.php'); ?>
 </head>
 
@@ -20,8 +20,7 @@
                             <h1 class="banner-title">Hakkımızda</h1>
                             <nav aria-label="breadcrumb">
                                 <ol class="breadcrumb justify-content-center">
-                                    <li class="breadcrumb-item"><a href="/index.php">Home</a></li>
-                                    <li class="breadcrumb-item"><a href="#">company</a></li>
+                                    <li class="breadcrumb-item"><a href="/index.php">Anasayfa</a></li>
                                     <li class="breadcrumb-item active" aria-current="page">Hakkımızda</li>
                                 </ol>
                             </nav>

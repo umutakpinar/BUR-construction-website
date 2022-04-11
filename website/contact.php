@@ -2,7 +2,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Contact</title> <!-- Bu kısımda sayfa başlığı girilecek -->
+    <title>İletişim Bilgilerimiz</title> <!-- Bu kısımda sayfa başlığı girilecek -->
 
     <?php include('head-req.php'); ?>
 </head>
@@ -21,9 +21,8 @@
                             <h1 class="banner-title">İletişim</h1>
                             <nav aria-label="breadcrumb">
                                 <ol class="breadcrumb justify-content-center">
-                                    <li class="breadcrumb-item"><a href="/index.php">Home</a></li>
-                                    <li class="breadcrumb-item"><a href="#">Company</a></li>
-                                    <li class="breadcrumb-item active" aria-current="page">İleitşim</li>
+                                    <li class="breadcrumb-item"><a href="/index.php">Anasayfa</a></li>
+                                    <li class="breadcrumb-item active" aria-current="page">İletişim</li>
                                 </ol>
                             </nav>
                         </div>
