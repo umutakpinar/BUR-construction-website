@@ -21,9 +21,8 @@
                             <h1 class="banner-title">Hizmetlerimiz</h1>
                             <nav aria-label="breadcrumb">
                                 <ol class="breadcrumb justify-content-center">
-                                    <li class="breadcrumb-item"><a href="#">Anasayfa</a></li>
+                                    <li class="breadcrumb-item"><a href="./index.php">Anasayfa</a></li>
                                     <li class="breadcrumb-item"><a href="#">Hizmetlerimiz</a></li>
-                                    <li class="breadcrumb-item active" aria-current="page">Aktif Hizmetler</li>
                                 </ol>
                             </nav>
                         </div>

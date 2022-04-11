@@ -111,6 +111,7 @@
                         </div>
                     </div>
                 </div>
+                <a class="btn btn-primary border rounded" href="./degerlerimiz.php">Değerlerimiz</a>
                 <!--/ Accordion end -->
 
             </div><!-- Col end -->

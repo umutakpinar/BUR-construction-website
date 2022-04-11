@@ -5,11 +5,11 @@
             <div class="container h-100">
                 <div class="row align-items-center h-100">
                     <div class="col-md-12 text-center">
-                        <h2 class="slide-title" data-animation-in="slideInLeft">17 Years of excellence in</h2>
-                        <h3 class="slide-sub-title" data-animation-in="slideInRight">Construction Industry</h3>
+                        <h2 class="slide-title" data-animation-in="slideInLeft">Tam 50 senedir <span style="color: orange;"> <b> B.U.R</b></span> 'da inşaat sektöründeyiz!</h2>
+                        <h3 class="slide-sub-title" data-animation-in="slideInRight">Tecrübeliyiz!</h3>
                         <p data-animation-in="slideInLeft" data-duration-in="1.2">
-                            <a href="services.php" class="slider btn btn-primary">Our Services</a>
-                            <a href="contact.php" class="slider btn btn-primary border">Contact Now</a>
+                            <a href="services.php" class="slider btn btn-primary">Hizmetlerimizi görün</a>
+                            <a href="contact.php" class="slider btn btn-primary border">Bize ulaşın</a>
                         </p>
                     </div>
                 </div>
@@ -22,11 +22,11 @@
             <div class="container h-100">
                 <div class="row align-items-center h-100">
                     <div class="col-md-12">
-                        <h2 class="slide-title-box" data-animation-in="slideInDown">World Class Service</h2>
-                        <h3 class="slide-title" data-animation-in="fadeIn">When Service Matters</h3>
-                        <h3 class="slide-sub-title" data-animation-in="slideInLeft">Your Choice is Simple</h3>
+                        <h2 class="slide-title-box" data-animation-in="slideInDown">Birinci sınıf araç kiralama hizmeti <span style="font-size:1.5rem; color: #23282D;"> <b> B.U.R </b></span> 'da!!</h2>
+                        <h3 class="slide-sub-title" data-animation-in="slideInLeft">Araca ihtiyacınız var, ancak operatörünüz mü yok?</h3>
+                        <h3 class="slide-title" data-animation-in="fadeIn">Sorun değil! Alanında uzman kadromuz ve son teknoloji inşaat araçlarımız ile hizmetinizdeyiz.</h3>
                         <p data-animation-in="slideInRight">
-                            <a href="services.php" class="slider btn btn-primary border">Our Services</a>
+                            <a href="services.php" class="slider btn btn-primary border">Hizmetlerimizi inceleyin</a>
                         </p>
                     </div>
                 </div>
@@ -39,12 +39,12 @@
             <div class="container h-100">
                 <div class="row align-items-center h-100">
                     <div class="col-md-12">
-                        <h2 class="slide-title" data-animation-in="slideInDown">Meet Our Engineers</h2>
-                        <h3 class="slide-sub-title" data-animation-in="fadeIn">We believe sustainability</h3>
-                        <p class="slider-description lead" data-animation-in="slideInRight">We will deal with your failure that determines how you achieve success.</p>
+                        <h2 class="slide-title" data-animation-in="slideInDown">Merak ettiğiniz tüm cevaplar <span style="color: orange;"> <b> B.U.R</b></span> 'da!</h2>
+                        <h3 class="slide-sub-title" data-animation-in="fadeIn">Danışmak istediğiniz bir şey mi var?</h3>
+                        <p class="slider-description lead" data-animation-in="slideInRight">Sorularınızı mühendislerimiz ve uzman ekibimize sorun cevaplayalım!</p>
                         <div data-animation-in="slideInLeft">
-                            <a href="contact.php" class="slider btn btn-primary" aria-label="contact-with-us">Get Free Quote</a>
-                            <a href="about.php" class="slider btn btn-primary border" aria-label="learn-more-about-us">Learn more</a>
+                            <a href="contact.php" class="slider btn btn-primary" aria-label="contact-with-us">Sizi arayalım!</a>
+                            <a href="./team.php" class="slider btn btn-primary border" aria-label="learn-more-about-us">Ekibi görün</a>
                         </div>
                     </div>
                 </div>
