@@ -1,5 +1,5 @@
 <!-- subscribe -->
-<section class="subscribe no-padding">
+<section class="subscribe no-padding mt-lg-5">
     <div class="container">
         <div class="row">
             <div class="col-md-4">

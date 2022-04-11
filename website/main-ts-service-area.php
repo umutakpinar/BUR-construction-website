@@ -3,8 +3,8 @@
     <div class="container">
         <div class="row text-center">
             <div class="col-12">
-                <h2 class="section-title">We Are Specialists In</h2>
-                <h3 class="section-sub-title">What We Do</h3>
+                <h2 class="section-title">Uzmanlık alanlarımız</h2>
+                <h3 class="section-sub-title">Neler yapıyoruz?</h3>
             </div>
         </div>
         <!--/ Title row end -->
@@ -16,8 +16,8 @@
                         <img loading="lazy" src="images/icon-image/service-icon1.png" alt="service-icon">
                     </div>
                     <div class="ts-service-box-info">
-                        <h3 class="service-box-title"><a href="#">Home Construction</a></h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit Integer adipiscing erat</p>
+                        <h3 class="service-box-title"><a href="#">Konut</a></h3>
+                        <p>Hayallerinizdeki evleri inşa ediyoruz! Yalnızca nasıl bir ev istediğinizi söyleyin ve arkanıza yaslanıp keyfinize bakın.</p>
                     </div>
                 </div><!-- Service 1 end -->
 
@@ -26,8 +26,8 @@
                         <img loading="lazy" src="images/icon-image/service-icon2.png" alt="service-icon">
                     </div>
                     <div class="ts-service-box-info">
-                        <h3 class="service-box-title"><a href="#">Building Remodels</a></h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit Integer adipiscing erat</p>
+                        <h3 class="service-box-title"><a href="#">Tasarım Modelleri ve Kroki</a></h3>
+                        <p>Her türlü inşaat planınızı veya tesisat projenizi uzman kadromuz ile tasarlıyoruz.</p>
                     </div>
                 </div><!-- Service 2 end -->
 
@@ -36,8 +36,8 @@
                         <img loading="lazy" src="images/icon-image/service-icon3.png" alt="service-icon">
                     </div>
                     <div class="ts-service-box-info">
-                        <h3 class="service-box-title"><a href="#">Interior Design</a></h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit Integer adipiscing erat</p>
+                        <h3 class="service-box-title"><a href="#">İç Dizayn</a></h3>
+                        <p>İç mimarlık hizmetimiz ile var olan yapınızın içini yeniden düzenliyoruz. İnşaat halindeki yapılarınız için tasarımlarda bulunuyoruz.</p>
                     </div>
                 </div><!-- Service 3 end -->
 

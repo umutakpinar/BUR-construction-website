@@ -3,22 +3,18 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-6">
-                <h3 class="column-title">Testimonials</h3>
-
+                <h3 class="column-title">Referanslar</h3>
                 <div id="testimonial-slide" class="testimonial-slide">
                     <div class="item">
                         <div class="quote-item">
                             <span class="quote-text">
-                                Question ran over her cheek When she reached the first hills of the Italic Mountains, she had a last
-                                view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet Village and the
-                                subline of her own road.
+                                Sattıkları tuğla ve çimentolar da en az yaptıkları iş kadar kaliteli.
                             </span>
 
                             <div class="quote-item-footer">
-                                <img loading="lazy" class="testimonial-thumb" src="images/clients/testimonial1.png" alt="testimonial">
                                 <div class="quote-item-info">
-                                    <h3 class="quote-author">Gabriel Denis</h3>
-                                    <span class="quote-subtext">Chairman, OKT</span>
+                                    <h3 class="quote-author">Durmuş Gelmiş</h3>
+                                    <span class="quote-subtext">Müteahhit, Karadeniz Yapı</span>
                                 </div>
                             </div>
                         </div><!-- Quote item end -->
@@ -28,16 +24,13 @@
                     <div class="item">
                         <div class="quote-item">
                             <span class="quote-text">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor inci done idunt ut
-                                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitoa tion ullamco laboris
-                                nisi aliquip consequat.
+                                İşlerinde başarılı, yaptıkları şeylerin arkasında duran bir ekip. Gerçekten harika!
                             </span>
 
                             <div class="quote-item-footer">
-                                <img loading="lazy" class="testimonial-thumb" src="images/clients/testimonial2.png" alt="testimonial">
                                 <div class="quote-item-info">
-                                    <h3 class="quote-author">Weldon Cash</h3>
-                                    <span class="quote-subtext">CFO, First Choice</span>
+                                    <h3 class="quote-author">Dilek Tutan</h3>
+                                    <span class="quote-subtext">CEO, Tutan Gayrimenkul</span>
                                 </div>
                             </div>
                         </div><!-- Quote item end -->
@@ -47,21 +40,97 @@
                     <div class="item">
                         <div class="quote-item">
                             <span class="quote-text">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor inci done idunt ut
-                                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitoa tion ullamco laboris
-                                nisi ut commodo consequat.
+                                Tüm iş hayatım boyunca çalıştığım en profesyonel aynı zamanda da en eğlenceli ekip.
                             </span>
 
                             <div class="quote-item-footer">
-                                <img loading="lazy" class="testimonial-thumb" src="images/clients/testimonial3.png" alt="testimonial">
                                 <div class="quote-item-info">
-                                    <h3 class="quote-author">Minter Puchan</h3>
-                                    <span class="quote-subtext">Director, AKT</span>
+                                    <h3 class="quote-author">Erşan Kuneri</h3>
+                                    <span class="quote-subtext">Mühendis, B.U.R. İnşaat</span>
                                 </div>
                             </div>
                         </div><!-- Quote item end -->
                     </div>
                     <!--/ Item 3 end -->
+                    <div class="item">
+                        <div class="quote-item">
+                            <span class="quote-text">
+                                "İş" konusunda asla aklınızın kalmayacağı bir şirket. Güvenilirliğe ve insan ilişkilerine son derece önem
+                                veren dinamik bir yapıları var.
+                            </span>
+
+                            <div class="quote-item-footer">
+                                <div class="quote-item-info">
+                                    <h3 class="quote-author">Asım Noyan</h3>
+                                    <span class="quote-subtext">İş Adamı</span>
+                                </div>
+                            </div>
+                        </div><!-- Quote item end -->
+                    </div>
+                    <!--/ Item 4 end -->
+                    <div class="item">
+                        <div class="quote-item">
+                            <span class="quote-text">
+                                Altyapı konusunda çağın ötesinde işler. Her yerde böyle güzel çalışmalar görmek dileğiyle.
+                            </span>
+
+                            <div class="quote-item-footer">
+                                <div class="quote-item-info">
+                                    <h3 class="quote-author">İbrahim Tekne</h3>
+                                    <span class="quote-subtext">Kent Sakini</span>
+                                </div>
+                            </div>
+                        </div><!-- Quote item end -->
+                    </div>
+                    <!--/ Item 5 end -->
+                    <div class="item">
+                        <div class="quote-item">
+                            <span class="quote-text">
+                                Son derece kaliteli ne yaptığını bilen ve yaptıklarıyla ses getirmiş bir ekip. Yaptıkları işlerde kalite
+                                farkı çok ortada.
+                            </span>
+
+                            <div class="quote-item-footer">
+                                <div class="quote-item-info">
+                                    <h3 class="quote-author">Lütfü Duran</h3>
+                                    <span class="quote-subtext">İş yeri sahibi</span>
+                                </div>
+                            </div>
+                        </div><!-- Quote item end -->
+                    </div>
+                    <!--/ Item 6 end -->
+                    <div class="item">
+                        <div class="quote-item">
+                            <span class="quote-text">
+                                Profesyonelliğin bir numaralı adresi. Sadece bir konut değil aynı zamanda da çok önemli bir yatırım aracı
+                                satın almış oldum. Emeği geçen herkese teşekkürler.
+                            </span>
+
+                            <div class="quote-item-footer">
+                                <div class="quote-item-info">
+                                    <h3 class="quote-author">Ufuk Demir</h3>
+                                    <span class="quote-subtext">Konut Sahibi</span>
+                                </div>
+                            </div>
+                        </div><!-- Quote item end -->
+                    </div>
+                    <!--/ Item 7 end -->
+                    <div class="item">
+                        <div class="quote-item">
+                            <span class="quote-text">
+                                Avrupai şirket yapısıyla hem yurtiçi hem de yurtdışında çok fazla gelecek vaadeden ve başarılı işler
+                                yapabilecek bir şirket. Tek kelimeyle harika!
+                            </span>
+
+                            <div class="quote-item-footer">
+                                <div class="quote-item-info">
+                                    <h3 class="quote-author">Besim Toker</h3>
+                                    <span class="quote-subtext">CEO, Toker Holding</span>
+                                </div>
+                            </div>
+                        </div><!-- Quote item end -->
+                    </div>
+                    <!--/ Item 7 end -->
 
                 </div>
                 <!--/ Testimonial carousel end-->
@@ -69,7 +138,7 @@
 
             <div class="col-lg-6 mt-5 mt-lg-0">
 
-                <h3 class="column-title">Happy Clients</h3>
+                <h3 class="column-title mt-5">Happy Clients</h3>
 
                 <div class="row all-clients">
                     <div class="col-sm-4 col-6">

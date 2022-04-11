@@ -2,7 +2,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Hizmetlerimiz</title> <!-- Bu kısımda sayfa başlığı girilecek -->
+    <title>Hizmetlerimiz</title>
 
     <?php include('head-req.php'); ?>
 </head>
@@ -26,11 +26,11 @@
                                 </ol>
                             </nav>
                         </div>
-                    </div><!-- Col end -->
-                </div><!-- Row end -->
-            </div><!-- Container end -->
-        </div><!-- Banner text end -->
-    </div><!-- Banner area end -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Services Page Main Container editlemeyi unutma 10.04.2022 01.17-->
     <section id="main-container" class="main-container pb-2">
