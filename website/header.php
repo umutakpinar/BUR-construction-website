@@ -4,12 +4,12 @@
         <div class="container">
             <div class="logo-area">
                 <div class="row align-items-center">
-                    <div class="logo col-lg-3 text-center text-lg-left mb-3 mb-md-5 mb-lg-0">
+                    <div class="logo col-lg-3 text-center text-lg-left mb-lg-0">
                         <a class="d-block" href="index.php">
-                            <img loading="lazy" src="images/logo.png" alt="Constra">
+                            <img loading="lazy" style="max-width: 100%; height: auto !important; max-height:15vh;" src="images/mainlogo.png" alt="B.U.R Yapı - İnşaat">
                         </a>
                     </div><!-- logo end -->
-                    <div class="col-lg-9 text-center text-lg-right">
+                    <div class="col-lg-9 text-center text-lg-right border rounded bg-light">
                         <div>
                             <a rel="nofollow" style="text-decoration:none;text-transform:uppercase;" href="https://www.doviz724.com/merkez-bankasi-doviz-kurlari.php" target="_new" title="Merkez Bankası Döviz Kurları"></a>
                         </div>
