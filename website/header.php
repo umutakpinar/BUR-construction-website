@@ -41,12 +41,12 @@
                                 <li class="nav-item dropdown">
                                     <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Hakkımızda <i class="fa fa-angle-down"></i></a>
                                     <ul class="dropdown-menu" role="menu">
-                                        <li><a href="about.php">Tarihçemiz</a></li>
-                                        <li><a href="team.php">Vizyonumuz</a></li>
-                                        <li><a href="testimonials.php">Misyonumuz</a></li>
-                                        <li><a href="faq.php">Değerlerimiz</a></li>
-                                        <li><a href="pricing.php">Genel Müdürün Mesajı</a></li>
-                                        <li><a href="pricing.php">Başkanın Mesajı</a></li>
+                                        <li><a href="./tarihcemiz.php">Tarihçemiz</a></li>
+                                        <li><a href="./vizyonumuz.php">Vizyonumuz</a></li>
+                                        <li><a href="./misyonumuz.php">Misyonumuz</a></li>
+                                        <li><a href="./degerlerimiz.php">Değerlerimiz</a></li>
+                                        <li><a href="./genel-mudurun-mesaji.php">Genel Müdürün Mesajı</a></li>
+                                        <li><a href="./baskanin-mesaji.php">Başkanın Mesajı</a></li>
                                     </ul>
                                 </li>
 
