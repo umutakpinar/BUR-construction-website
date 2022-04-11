@@ -48,9 +48,9 @@
                                 <img loading="lazy" src="images/icon-image/service-icon1.png" alt="service-icon">
                             </div>
                             <div class="ts-service-info">
-                                <h3 class="service-box-title"><a href="service-single.html">Zero Harm Everyday</a></h3>
+                                <h3 class="service-box-title"><a href="service-single.php">Zero Harm Everyday</a></h3>
                                 <p>You have ideas, goals, and dreams. We have a culturally diverse, forward thinking team looking for talent like. Lorem ipsum dolor suscipit.</p>
-                                <a class="learn-more d-inline-block" href="service-single.html" aria-label="service-details"><i class="fa fa-caret-right"></i> Learn more</a>
+
                             </div>
                         </div>
                     </div><!-- Service1 end -->
@@ -66,9 +66,9 @@
                                 <img loading="lazy" src="images/icon-image/service-icon2.png" alt="service-icon">
                             </div>
                             <div class="ts-service-info">
-                                <h3 class="service-box-title"><a href="service-single.html">Virtual Construction</a></h3>
+                                <h3 class="service-box-title"><a href="service-single.php">Virtual Construction</a></h3>
                                 <p>You have ideas, goals, and dreams. We have a culturally diverse, forward thinking team looking for talent like. Lorem ipsum dolor suscipit.</p>
-                                <a class="learn-more d-inline-block" href="service-single.html" aria-label="service-details"><i class="fa fa-caret-right"></i> Learn more</a>
+
                             </div>
                         </div>
                     </div><!-- Service2 end -->
@@ -84,9 +84,9 @@
                                 <img loading="lazy" src="images/icon-image/service-icon3.png" alt="service-icon">
                             </div>
                             <div class="ts-service-info">
-                                <h3 class="service-box-title"><a href="service-single.html">Build To Last</a></h3>
+                                <h3 class="service-box-title"><a href="service-single.php">Build To Last</a></h3>
                                 <p>You have ideas, goals, and dreams. We have a culturally diverse, forward thinking team looking for talent like. Lorem ipsum dolor suscipit.</p>
-                                <a class="learn-more d-inline-block" href="service-single.html" aria-label="service-details"><i class="fa fa-caret-right"></i> Learn more</a>
+
                             </div>
                         </div>
                     </div><!-- Service3 end -->
@@ -102,9 +102,9 @@
                                 <img loading="lazy" src="images/icon-image/service-icon4.png" alt="service-icon">
                             </div>
                             <div class="ts-service-info">
-                                <h3 class="service-box-title"><a href="service-single.html">EXTERIOR DESIGN</a></h3>
+                                <h3 class="service-box-title"><a href="service-single.php">EXTERIOR DESIGN</a></h3>
                                 <p>You have ideas, goals, and dreams. We have a culturally diverse, forward thinking team looking for talent like. Lorem ipsum dolor suscipit.</p>
-                                <a class="learn-more d-inline-block" href="service-single.html" aria-label="service-details"><i class="fa fa-caret-right"></i> Learn more</a>
+
                             </div>
                         </div>
                     </div><!-- Service1 end -->
@@ -120,9 +120,9 @@
                                 <img loading="lazy" src="images/icon-image/service-icon5.png" alt="service-icon">
                             </div>
                             <div class="ts-service-info">
-                                <h3 class="service-box-title"><a href="service-single.html">RENOVATION</a></h3>
+                                <h3 class="service-box-title"><a href="service-single.php">RENOVATION</a></h3>
                                 <p>You have ideas, goals, and dreams. We have a culturally diverse, forward thinking team looking for talent like. Lorem ipsum dolor suscipit.</p>
-                                <a class="learn-more d-inline-block" href="service-single.html" aria-label="service-details"><i class="fa fa-caret-right"></i> Learn more</a>
+
                             </div>
                         </div>
                     </div><!-- Service2 end -->
@@ -138,9 +138,9 @@
                                 <img loading="lazy" src="images/icon-image/service-icon6.png" alt="service-icon">
                             </div>
                             <div class="ts-service-info">
-                                <h3 class="service-box-title"><a href="service-single.html">SAFETY MANAGEMENT</a></h3>
+                                <h3 class="service-box-title"><a href="service-single.php">SAFETY MANAGEMENT</a></h3>
                                 <p>You have ideas, goals, and dreams. We have a culturally diverse, forward thinking team looking for talent like. Lorem ipsum dolor suscipit.</p>
-                                <a class="learn-more d-inline-block" href="service-single.html" aria-label="service-details"><i class="fa fa-caret-right"></i> Learn more</a>
+
                             </div>
                         </div>
                     </div><!-- Service3 end -->

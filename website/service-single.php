@@ -43,8 +43,8 @@
                         <div class="widget">
                             <h3 class="widget-title">Solutions</h3>
                             <ul class="nav service-menu">
-                                <li><a href="service-single.html">Home Construction</a></li>
-                                <li class="active"><a href="service-single.html">Building Remodels</a></li>
+                                <li><a href="service-single.php">Home Construction</a></li>
+                                <li class="active"><a href="service-single.php">Building Remodels</a></li>
                                 <li><a href="#">Interior Design</a></li>
                                 <li><a href="#">Exterior Design</a></li>
                                 <li><a href="#">Renovation</a></li>

@@ -21,7 +21,7 @@
                             <h1 class="banner-title">News</h1>
                             <nav aria-label="breadcrumb">
                                 <ol class="breadcrumb justify-content-center">
-                                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                                    <li class="breadcrumb-item"><a href="./index.php">Home</a></li>
                                     <li class="breadcrumb-item"><a href="#">News</a></li>
                                     <li class="breadcrumb-item active" aria-current="page">News Right sidebar</li>
                                 </ol>
@@ -318,6 +318,8 @@
         </div><!-- Conatiner end -->
     </section><!-- Main container end -->
 
+
+    <?php include("./main-news.php"); ?>
     <?php include('footer.php'); ?>
     <?php include('js-files.php'); ?>
 </body>

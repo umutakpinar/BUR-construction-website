@@ -51,16 +51,16 @@
 
                         <div class="col-lg-4 col-md-6 shuffle-item" data-groups="[&quot;government&quot;,&quot;healthcare&quot;]">
                             <div class="project-img-container">
-                                <a class="gallery-popup" href="images/projects/project10.jpg">
-                                    <img class="img-fluid" src="images/projects/project10.jpg" alt="project-image">
+                                <a class="gallery-popup" href="images/projects2/project10.jpg">
+                                    <img class="img-fluid" src="images/projects2/project10.jpg" alt="project-image">
                                     <span class="gallery-icon"><i class="fa fa-plus"></i></span>
                                 </a>
                                 <div class="project-item-info">
                                     <div class="project-item-info-content">
                                         <h3 class="project-item-title">
-                                            <a href="projects-single.php"> B.U.R. Life Projesi</a>
+                                            <a href="projects-single.php"> İzmir Çiğli Tramvay Hattı Yapım İşi</a>
                                         </h3>
-                                        <p class="project-cat">Rezidans ve Ofis</p>
+                                        <p class="project-cat">Tramvay Hattı Yapım İşi</p>
                                     </div>
                                 </div>
                             </div>
@@ -68,16 +68,16 @@
 
                         <div class="col-lg-4 col-md-6 shuffle-item" data-groups="[&quot;healthcare&quot;]">
                             <div class="project-img-container">
-                                <a class="gallery-popup" href="images/projects/project20.jpg">
-                                    <img class="img-fluid" src="images/projects/project20.jpg" alt="project-image">
+                                <a class="gallery-popup" href="images/projects2/project20.jpg">
+                                    <img class="img-fluid" src="images/projects2/project20.jpg" alt="project-image">
                                     <span class="gallery-icon"><i class="fa fa-plus"></i></span>
                                 </a>
                                 <div class="project-item-info">
                                     <div class="project-item-info-content">
                                         <h3 class="project-item-title">
-                                            <a href="projects-single.php">Gebze - Orhangazi – İzmir Otoyolu Projesi</a>
+                                            <a href="projects-single.php">Riyadh City South Faz-4, Altyapı İşleri</a>
                                         </h3>
-                                        <p class="project-cat">2x3 şeritli otoyol</p>
+                                        <p class="project-cat">Altyapı Çalışması</p>
                                     </div>
                                 </div>
                             </div>
@@ -85,16 +85,16 @@
 
                         <div class="col-lg-4 col-md-6 shuffle-item" data-groups="[&quot;infrastructure&quot;,&quot;commercial&quot;]">
                             <div class="project-img-container">
-                                <a class="gallery-popup" href="images/projects/project30.jpg">
-                                    <img class="img-fluid" src="images/projects/project30.jpg" alt="project-image">
+                                <a class="gallery-popup" href="images/projects2/project30.jpg">
+                                    <img class="img-fluid" src="images/projects2/project30.jpg" alt="project-image">
                                     <span class="gallery-icon"><i class="fa fa-plus"></i></span>
                                 </a>
                                 <div class="project-item-info">
                                     <div class="project-item-info-content">
                                         <h3 class="project-item-title">
-                                            <a href="projects-single.php">B.U.R. Tower Projesi</a>
+                                            <a href="projects-single.php">Silifke - Mut (Kısım 1) Yolu Projesi</a>
                                         </h3>
-                                        <p class="project-cat"> Konut, Ofis ve Ticari Alan Projesi</p>
+                                        <p class="project-cat">2x2 Şeritli Otoyol</p>
                                     </div>
                                 </div>
                             </div>
@@ -102,16 +102,16 @@
 
                         <div class="col-lg-4 col-md-6 shuffle-item" data-groups="[&quot;education&quot;,&quot;infrastructure&quot;]">
                             <div class="project-img-container">
-                                <a class="gallery-popup" href="images/projects/project40.jpg">
-                                    <img class="img-fluid" src="images/projects/project40.jpg" alt="project-image">
+                                <a class="gallery-popup" href="images/projects2/project40.jpg">
+                                    <img class="img-fluid" src="images/projects2/project40.jpg" alt="project-image">
                                     <span class="gallery-icon"><i class="fa fa-plus"></i></span>
                                 </a>
                                 <div class="project-item-info">
                                     <div class="project-item-info-content">
                                         <h3 class="project-item-title">
-                                            <a href="projects-single.php">Saklıbahçe Konakları Projesi</a>
+                                            <a href="projects-single.php">Eyiste Viyadüğü Projesi</a>
                                         </h3>
-                                        <p class="project-cat">Villa kompleksi</p>
+                                        <p class="project-cat">Dengeli Konsol Viyadük</p>
                                     </div>
                                 </div>
                             </div>
@@ -119,16 +119,16 @@
 
                         <div class="col-lg-4 col-md-6 shuffle-item" data-groups="[&quot;infrastructure&quot;,&quot;education&quot;]">
                             <div class="project-img-container">
-                                <a class="gallery-popup" href="images/projects/project50.jpg">
-                                    <img class="img-fluid" src="images/projects/project50.jpg" alt="project-image">
+                                <a class="gallery-popup" href="images/projects2/project50.jpg">
+                                    <img class="img-fluid" src="images/projects2/project50.jpg" alt="project-image">
                                     <span class="gallery-icon"><i class="fa fa-plus"></i></span>
                                 </a>
                                 <div class="project-item-info">
                                     <div class="project-item-info-content">
                                         <h3 class="project-item-title">
-                                            <a href="projects-single.php">B.U.R. Tower Projesi</a>
+                                            <a href="projects-single.php">Dubai Vista Plajı Kuleleri Bina Projesi</a>
                                         </h3>
-                                        <p class="project-cat">Konut, Ofis ve Ticari Alan Projesi</p>
+                                        <p class="project-cat">Rezidans Projesi</p>
                                     </div>
                                 </div>
                             </div>
@@ -136,16 +136,16 @@
 
                         <div class="col-lg-4 col-md-6 shuffle-item" data-groups="[&quot;residential&quot;]">
                             <div class="project-img-container">
-                                <a class="gallery-popup" href="images/projects/project60.jpg">
-                                    <img class="img-fluid" src="images/projects/project60.jpg" alt="project-image">
+                                <a class="gallery-popup" href="images/projects2/project60.jpg">
+                                    <img class="img-fluid" src="images/projects2/project60.jpg" alt="project-image">
                                     <span class="gallery-icon"><i class="fa fa-plus"></i></span>
                                 </a>
                                 <div class="project-item-info">
                                     <div class="project-item-info-content">
                                         <h3 class="project-item-title">
-                                            <a href="projects-single.php">G09 Golf Manzaralı Apartmanlar Projesi</a>
+                                            <a href="projects-single.php">Cezayir Tizi Ouzou Otoyolu Projesi</a>
                                         </h3>
-                                        <p class="project-cat">Rezidans Projesi</p>
+                                        <p class="project-cat">2x3 şeritli otoyol</p>
                                     </div>
                                 </div>
                             </div>

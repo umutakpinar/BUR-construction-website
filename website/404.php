@@ -27,7 +27,7 @@
                         </div>
                         <div class="error-body">
                             Try using the button below to go to main page of the site <br>
-                            <a href="index.html" class="btn btn-primary">Back to Home Page</a>
+                            <a href="index.php" class="btn btn-primary">Back to Home Page</a>
                         </div>
                     </div>
                 </div>
