@@ -16,8 +16,39 @@ if (session("login") == false) {
     <title>Admin Panel</title>
 </head>
 
+<!-- Bootstrap -->
+<!-- <link rel="stylesheet" href="./website/plugins/bootstrap/bootstrap.min.css"> -->
+<link rel="stylesheet" href="../plugins/bootstrap/bootstrap.min.css" />
+<!-- FontAwesome -->
+<link rel="stylesheet" href="../plugins/fontawesome/css/all.min.css">
+<!-- Animation -->
+<link rel="stylesheet" href="../plugins/animate-css/animate.css">
+<!-- slick Carousel -->
+<link rel="stylesheet" href="../plugins/slick/slick.css">
+<link rel="stylesheet" href="../plugins/slick/slick-theme.css">
+<!-- Colorbox -->
+<link rel="stylesheet" href="../plugins/colorbox/colorbox.css">
+<!-- Template styles-->
+<link rel="stylesheet" href="../css/style.css">
+
 <body>
-    Welcome to your panel. You logged in succesfully. <br> <?php echo "Welcome " . session("username") ?>
+    <div class="d-flex">
+        <div id="header" class="row container bg-warning">
+            header
+        </div>
+        <div id="main" class="row container">
+            <div id="navbar-left" class="container bg-danger w-25 h-100">
+                left navbar
+            </div>
+            <div id="right-section" class="container w-75 h-100">
+                right section
+            </div>
+        </div>
+        <div id="footer" class="row container bg-warning">
+            footer
+        </div>
+    </div>
+    <!-- Welcome to your panel. You logged in succesfully. <br> <?= "Welcome" . $_SESSION["username"] ?> -->
 </body>
 
 </html>

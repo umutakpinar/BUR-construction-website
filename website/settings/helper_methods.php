@@ -45,3 +45,10 @@ function getColor()
         echo 'bg-dark'; //yani varsayılan olarak light mode yaptık 
     }
 };
+
+
+function trimPost($post)
+{
+    $data = trim($post);
+    return $data;
+}

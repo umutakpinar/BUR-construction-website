@@ -67,16 +67,16 @@ include "../settings/helper_methods.php";
                 </div>
                 <div class="card-body">
                     <div class="m-3 p-3 alert alert-danger">
-                        This page only for authorized users and B.U.R. Company Administrators.
+                        <?= session("alert") != false ? session("alert") : "This page only for authorized users and B.U.R. Company Administrators."  ?>
                     </div>
                     <form action="../settings/admin_login.php?islem=giris" method="post" class="container d-flex flex-column justify-content-center">
                         <div class="input-group mb-2">
                             <label for="username" class="input-group-text input-prepend">Username</label>
-                            <input id="username" type="text" name="username" class="form-control input-group-append" required>
+                            <input id="username" type="text" name="username" value="<?= session("username") ?>" class="form-control input-group-append" placeholder="johndoe" required>
                         </div>
                         <div class="input-group mb-2">
                             <label for="password" class="input-group-text input-prepend">Password</label>
-                            <input id="password" type="text" name="password" class="form-control input-group-append" required>
+                            <input id="password" type="password" name="password" class="form-control input-group-append" placeholder="passw0rd" required>
                         </div>
                         <input type="submit" class="btn btn-warning btn-lg" value="Login">
                     </form>
@@ -90,3 +90,8 @@ include "../settings/helper_methods.php";
 </body>
 
 </html>
+
+<?php
+$_SESSION["alert"] = false;
+$_SESSION["username"] = "";
+?>
