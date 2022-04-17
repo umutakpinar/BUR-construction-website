@@ -72,11 +72,11 @@ include "../settings/helper_methods.php";
                     <form action="../settings/admin_login.php?islem=giris" method="post" class="container d-flex flex-column justify-content-center">
                         <div class="input-group mb-2">
                             <label for="username" class="input-group-text input-prepend">Username</label>
-                            <input id="username" type="text" name="username" class="form-control input-group-append" require>
+                            <input id="username" type="text" name="username" class="form-control input-group-append" required>
                         </div>
                         <div class="input-group mb-2">
                             <label for="password" class="input-group-text input-prepend">Password</label>
-                            <input id="password" type="text" name="password" class="form-control input-group-append" require>
+                            <input id="password" type="text" name="password" class="form-control input-group-append" required>
                         </div>
                         <input type="submit" class="btn btn-warning btn-lg" value="Login">
                     </form>

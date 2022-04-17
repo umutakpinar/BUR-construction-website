@@ -2,7 +2,7 @@
 
 session_start();
 include "../settings/helper_methods.php";
-if (session("login")) {
+if (session("login") == false) {
     header("Location: login.php");
 }
 ?>
@@ -17,7 +17,7 @@ if (session("login")) {
 </head>
 
 <body>
-    Welcome to your panel. You logged in succesfully.
+    Welcome to your panel. You logged in succesfully. <br> <?php echo "Welcome " . session("username") ?>
 </body>
 
 </html>
