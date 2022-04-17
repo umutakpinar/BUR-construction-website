@@ -11,7 +11,8 @@
 <!-- CSS
 ================================================== -->
 <!-- Bootstrap -->
-<link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
+<!-- <link rel="stylesheet" href="./website/plugins/bootstrap/bootstrap.min.css"> -->
+<link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css" />
 <!-- FontAwesome -->
 <link rel="stylesheet" href="plugins/fontawesome/css/all.min.css">
 <!-- Animation -->

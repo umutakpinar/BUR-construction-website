@@ -33,6 +33,49 @@
         </div>
     </div>
 
+    <section id="main-container" class="main-container">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-xl-3 col-lg-4">
+                    <div class="sidebar sidebar-left">
+                        <div class="widget">
+                            <h3 class="widget-title">Hakkımızda</h3>
+                            <ul class="nav service-menu">
+                                <li><a href="tarihcemiz.php">Tarihçemiz</a></li>
+                                <li class="active"><a href="#">Vizyonumuz</a></li>
+                                <li><a href="misyonumuz.php">Misyonumuz</a></li>
+                                <li><a href="degerlerimiz.php">Değerlerimiz</a></li>
+                                <li><a href="genel-mudurun-mesaji.php">Genel Müdürün Mesajı</a></li>
+                                <li><a href="baskanin-mesaji.php">Başkanın Mesajı</a></li>
+                            </ul>
+                        </div><!-- Widget end -->
+
+
+
+                    </div><!-- Sidebar end -->
+                </div><!-- Sidebar Col end -->
+
+                <div class="col-xl-8 col-lg-8">
+                    <div class="content-inner-page">
+
+
+                        
+                        <div class="gap-40"></div>
+
+                        <h2 class="column-title mrt-0">Vizyonumuz</h2>
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                <p style="text-indent: 3vh;">Hedefimiz; içinde yer aldığımız sektörlerde kalitemizle ön plana çıkarak en iyi olabilmek, ülkemiz için en yüksek toplumsal ve ekonomik değeri yaratabilmektir.</p>
+                            </div><!-- col end -->
+                        </div><!-- 1st row end-->
+                    </div><!-- Content inner end -->
+                </div><!-- Content Col end -->
+            </div><!-- Main row end -->
+        </div><!-- Conatiner end -->
+    </section><!-- Main container end -->
+
     <?php include('footer.php'); ?>
     <?php include('js-files.php'); ?>
 </body>
