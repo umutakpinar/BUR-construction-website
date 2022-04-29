@@ -53,8 +53,8 @@
                         <img loading="lazy" src="images/icon-image/service-icon4.png" alt="service-icon">
                     </div>
                     <div class="ts-service-box-info">
-                        <h3 class="service-box-title"><a href="#">Exterior Design</a></h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit Integer adipiscing erat</p>
+                        <h3 class="service-box-title"><a href="#">Dış Dizayn</a></h3>
+                        <p>Mevcut yapınızın dış tasarımını düzenliyor, görselliğini bambaşka bir boyuta taşıyoruz.</p>
                     </div>
                 </div><!-- Service 4 end -->
 
@@ -63,8 +63,8 @@
                         <img loading="lazy" src="images/icon-image/service-icon5.png" alt="service-icon">
                     </div>
                     <div class="ts-service-box-info">
-                        <h3 class="service-box-title"><a href="#">Renovation</a></h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit Integer adipiscing erat</p>
+                        <h3 class="service-box-title"><a href="#">Restorasyon</a></h3>
+                        <p>Yapıların kültürel ve etnik değerlerini koruyarak, profesyonel restorasyonlar gerçekleştiriyoruz.</p>
                     </div>
                 </div><!-- Service 5 end -->
 
@@ -73,8 +73,8 @@
                         <img loading="lazy" src="images/icon-image/service-icon6.png" alt="service-icon">
                     </div>
                     <div class="ts-service-box-info">
-                        <h3 class="service-box-title"><a href="#">Safety Management</a></h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit Integer adipiscing erat</p>
+                        <h3 class="service-box-title"><a href="#">Güvenlik Yönetimi</a></h3>
+                        <p>Yapı güvenliğini artırıcı önlemler alıyor, analizler ve dayanıklılık testleri uyguluyoruz.</p>
                     </div>
                 </div><!-- Service 6 end -->
             </div><!-- Col end -->

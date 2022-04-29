@@ -40,7 +40,7 @@
                 <div class="col-lg-4 col-md-6 mb-5">
                     <div class="ts-service-box">
                         <div class="ts-service-image-wrapper">
-                            <img loading="lazy" class="w-100" src="images/services/service1.jpg" alt="service-image">
+                            <img loading="lazy" class="w-100" src="images/services/1service.jpg" alt="service-image">
                         </div>
                         <div class="d-flex">
                             <div class="ts-service-box-img">
@@ -58,7 +58,7 @@
                 <div class="col-lg-4 col-md-6 mb-5">
                     <div class="ts-service-box">
                         <div class="ts-service-image-wrapper">
-                            <img loading="lazy" class="w-100" src="images/services/service2.jpg" alt="service-image">
+                            <img loading="lazy" class="w-100" src="images/services/2service.jpg" alt="service-image">
                         </div>
                         <div class="d-flex">
                             <div class="ts-service-box-img">
@@ -76,7 +76,7 @@
                 <div class="col-lg-4 col-md-6 mb-5">
                     <div class="ts-service-box">
                         <div class="ts-service-image-wrapper">
-                            <img loading="lazy" class="w-100" src="images/services/service3.jpg" alt="service-image">
+                            <img loading="lazy" class="w-100" src="images/services/3service.jpg" alt="service-image">
                         </div>
                         <div class="d-flex">
                             <div class="ts-service-box-img">
@@ -94,7 +94,7 @@
                 <div class="col-lg-4 col-md-6 mb-5">
                     <div class="ts-service-box">
                         <div class="ts-service-image-wrapper">
-                            <img loading="lazy" class="w-100" src="images/services/service4.jpg" alt="service-image">
+                            <img loading="lazy" class="w-100" src="images/services/4service.jpg" alt="service-image">
                         </div>
                         <div class="d-flex">
                             <div class="ts-service-box-img">
@@ -112,7 +112,7 @@
                 <div class="col-lg-4 col-md-6 mb-5">
                     <div class="ts-service-box">
                         <div class="ts-service-image-wrapper">
-                            <img loading="lazy" class="w-100" src="images/services/service5.jpg" alt="service-image">
+                            <img loading="lazy" class="w-100" src="images/services/5service.jpg" alt="service-image">
                         </div>
                         <div class="d-flex">
                             <div class="ts-service-box-img">
@@ -130,7 +130,7 @@
                 <div class="col-lg-4 col-md-6 mb-5">
                     <div class="ts-service-box">
                         <div class="ts-service-image-wrapper">
-                            <img loading="lazy" class="w-100" src="images/services/service6.jpg" alt="service-image">
+                            <img loading="lazy" class="w-100" src="images/services/6service.jpg" alt="service-image">
                         </div>
                         <div class="d-flex">
                             <div class="ts-service-box-img">
