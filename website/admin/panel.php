@@ -160,9 +160,9 @@ if (session("login") == false) {
                         <li class="d-block"><a class="bg-warning p-1 rounded ws-50 d-block" href="#"> Haberler</a></li>
                         <li class="d-block"><a class="bg-warning p-1 rounded ws-50 d-block" href="#"> İletişim</a></li>
                         <li class="d-block"><a class="bg-warning p-1 rounded ws-50 d-block" href="#"> Footer</a></li>
-                        <div class="d-flex justify-content-center align-items-center">
-                            <button class="btn-lg ws-50 btn-danger text-white">Logout</button>
-                        </div>
+                        <form action="../settings/admin_login.php?islem=cikis" method="post" class="d-flex justify-content-center align-items-center">
+                            <button type="submit" class="btn-lg ws-50 btn-danger text-white">Logout</button>
+                        </form>
                     </ul>
                 </div>
             </div>
