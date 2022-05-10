@@ -138,7 +138,7 @@
 
             <div class="col-lg-6 mt-5 mt-lg-0">
 
-                <h3 class="column-title mt-5">Happy Clients</h3>
+                <h3 class="column-title mt-5">Müşterilerimiz</h3>
 
                 <div class="row all-clients">
                     <div class="col-sm-4 col-6">

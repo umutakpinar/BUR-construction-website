@@ -39,7 +39,7 @@ function session($session)
 
 function getColor()
 {
-    if ($_COOKIE['color'] == 'bg-light') { //cookieyi set ederken setcookie() kullanılır get ederken $_COOKIE['cokie_name'] şekilnde alınır
+    if ($_COOKIE['color'] == 'bg-light') { //!! DİKKAT !! cookieyi set ederken setcookie() kullanılır get ederken $_COOKIE['cokie_name'] şekilnde alınır
         echo 'bg-light';
     } else {
         echo 'bg-dark'; //yani varsayılan olarak light mode yaptık 

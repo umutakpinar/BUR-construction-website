@@ -30,8 +30,8 @@ if (get("islem") == "cikis") { //cikis islemi
     $logout_record_query = $conn->prepare('INSERT INTO log_records (description,admin_name) VALUES ("Logged out", :admin_name )'); //cikis yapilacak log kaydi
     $logout_record_query->execute([":admin_name" => $_SESSION["username"]]);
     $_SESSION["login"] = false;
-    unset($_SESSION["username"]);
-    session_destroy();
-    $_SESSION["alert"] = "Çıkış yapıldı!";
+    unset($_SESSION["username"]); //sesionda set edilen bilgileri temizle
+    session_destroy(); //sessionu kapat nasıl olsa yönlendirdiğin sayfada tekrar session_start() ediliyor
+    $_SESSION["alert"] = "Çıkış yapıldı!"; //yönlendirmeden önce cikis bilgisi gönder
     header("Location: ../admin/login.php");
 }

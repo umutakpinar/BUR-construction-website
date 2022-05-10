@@ -140,6 +140,10 @@ if (session("login") == false) {
                     #292b2c 50%, #292b2c 62.5%, #FFB600 62.5%, #FFB600 75%, #292b2c 75%, #292b2c 87.5%, #FFB600 87.5%, #FFB600);
             border: #FFB600 solid 1px;
         }
+
+        .active-list-item {
+            background-color: red !important;
+        }
     </style>
 </head>
 
@@ -152,21 +156,22 @@ if (session("login") == false) {
                     <ul class="list-unstyled h-100 text-center py-5 d-flex flex-column justify-content-around text-dark">
                         <span style="color: darkorange;"> Aktif Admin: <span style="color: red;"> <?= $_SESSION["username"] ?></span></span>
                         <span style="color: darkorange;">Düzenlemek istediğiniz bölümü seçin: </span>
-                        <li class="d-block"><a class="bg-warning p-1 rounded ws-50 d-block" href="#"> Header</a></li>
-                        <li class="d-block"><a class="bg-warning p-1 rounded ws-50 d-block" href="#"> Anasayfa</a></li>
-                        <li class="d-block"><a class="bg-warning p-1 rounded ws-50 d-block" href="#"> Hakkımızda</a></li>
-                        <li class="d-block"><a class="bg-warning p-1 rounded ws-50 d-block" href="#"> Projelerimiz</a></li>
-                        <li class="d-block"><a class="bg-warning p-1 rounded ws-50 d-block" href="#"> Hizmetlerimiz</a></li>
-                        <li class="d-block"><a class="bg-warning p-1 rounded ws-50 d-block" href="#"> Haberler</a></li>
-                        <li class="d-block"><a class="bg-warning p-1 rounded ws-50 d-block" href="#"> İletişim</a></li>
-                        <li class="d-block"><a class="bg-warning p-1 rounded ws-50 d-block" href="#"> Footer</a></li>
+                        <li class="d-block"><a id="header" class="list-item bg-warning p-1 rounded ws-50 d-block" href="?edit=header"> Header</a></li>
+                        <li class="d-block"><a id="anasayfa" class="list-item bg-warning p-1 rounded ws-50 d-block" href="?edit=anasayfa"> Anasayfa</a></li>
+                        <li class="d-block"><a id="hakkimizda" class="list-item bg-warning p-1 rounded ws-50 d-block" href="?edit=hakkimizda"> Hakkımızda</a></li>
+                        <li class="d-block"><a id="projelerimiz" class="list-item bg-warning p-1 rounded ws-50 d-block" href="?edit=projelerimiz"> Projelerimiz</a></li>
+                        <li class="d-block"><a id="hizmetlerimiz" class="list-item bg-warning p-1 rounded ws-50 d-block" href="?edit=hizmetlerimiz"> Hizmetlerimiz</a></li>
+                        <li class="d-block"><a id="haberler" class="list-item bg-warning p-1 rounded ws-50 d-block" href="?edit=haberler"> Haberler</a></li>
+                        <li class="d-block"><a id="iletisim" class="list-item bg-warning p-1 rounded ws-50 d-block" href="?edit=iletisim"> İletişim</a></li>
+                        <li class="d-block"><a id="footer" class="list-item bg-warning p-1 rounded ws-50 d-block" href="?edit=footer"> Footer</a></li>
+
                         <form action="../settings/admin_login.php?islem=cikis" method="post" class="d-flex justify-content-center align-items-center">
                             <button type="submit" class="btn-lg ws-50 btn-danger text-white">Logout</button>
                         </form>
                     </ul>
                 </div>
             </div>
-            <a onclick="toggle()" class="side-button mt-1">
+            <a onclick="toggle()" class="side-button mt-1" style="left: 0vw;">
                 <i class="display-5 fas fa-arrow-right" style="color: darkorange;"></i>
             </a>
             <div class="right-side col-12">
@@ -186,7 +191,7 @@ if (session("login") == false) {
                             </span>
                         </div>';
 
-                        //daha sonra burada sol menüdeki başlıkalrdan hangisi urlye gmnderilmişse ona göre burayı düzenleeycek kodu yazdır
+                        //daha sonra burada sol menüdeki başlıkalrdan hangisi urlye gönderilmişse ona göre burayı düzenleeycek kodu yazdır
                         ?>
 
                     </div>
@@ -197,15 +202,30 @@ if (session("login") == false) {
     </div>
 
     <script>
-        var x = document.getElementsByClassName("left-side");
+        //immediately invoked function expression tanımladım sayfa yenilendiğinde bu sayfadaki get işlemini alacak (url abrında yazan işlemi ?'den sonrakini yani)
+        (() => {
+            let url = window.location.href;
+            if (url.includes("?edit=")) {
+                var this_page_get_process = url.split("?")[1]; //urlyi komple alıp split ile ? işaretinden sonraik kısmı yani get değerini adlım edit = header şeklinde
+                this_page_get_process = this_page_get_process.split("=")[1]; // daha sonra ='i ikiye bölüp ikinci kısmını adlım header (aslında yuakrıda direkt oalrak = işareti ile bölümleme yapılabilirdi.)
+                var listItems = document.querySelectorAll(".list-item"); //list itemlerini alıyorum
+                listItems.forEach((item) => {
+                    if (item.id == this_page_get_process) { //burada list itemlerindeki idleri kontrol ediyorum. eğer idleri eşleşiyorsa classı active-list-item olarak ekliyorum.
+                        item.classList.add("active-list-item");
+                    }
+                });
+            }
+        })();
+
+        var x = document.querySelector(".left-side");
         var btn = document.querySelector(".side-button");
 
         function toggle() {
-            if (x[0].style.display === "none" || btn.style.left === "0vw") {
-                x[0].style.display = "block";
+            if (x.style.display === "none" || btn.style.left === "0vw") {
+                x.style.display = "block";
                 btn.style.left = "33vw";
             } else {
-                x[0].style.display = "none";
+                x.style.display = "none";
                 btn.style.left = "0vw";
             }
         }
