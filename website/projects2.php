@@ -45,113 +45,11 @@
             <div class="row">
                 <div class="col-12">
 
+                    <div id="project-wrapper" class="row shuffle-wrapper">
+                        <!-- Db'den çekilen veriler burada listelenecek, dbden gelen verilerin eleman sayısı kadar div olmalı -->
+                    </div>
 
-                    <div class="row shuffle-wrapper">
-                        <div class="col-1 shuffle-sizer"></div>
 
-                        <div class="col-lg-4 col-md-6 shuffle-item" data-groups="[&quot;government&quot;,&quot;healthcare&quot;]">
-                            <div class="project-img-container">
-                                <a class="gallery-popup" href="images/projects2/project10.jpg">
-                                    <img class="img-fluid" src="images/projects2/project10.jpg" alt="project-image">
-                                    <span class="gallery-icon"><i class="fa fa-plus"></i></span>
-                                </a>
-                                <div class="project-item-info">
-                                    <div class="project-item-info-content">
-                                        <h3 class="project-item-title">
-                                            <a href="projects-single.php"> İzmir Çiğli Tramvay Hattı Yapım İşi</a>
-                                        </h3>
-                                        <p class="project-cat">Tramvay Hattı Yapım İşi</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div><!-- shuffle item 1 end -->
-
-                        <div class="col-lg-4 col-md-6 shuffle-item" data-groups="[&quot;healthcare&quot;]">
-                            <div class="project-img-container">
-                                <a class="gallery-popup" href="images/projects2/project20.jpg">
-                                    <img class="img-fluid" src="images/projects2/project20.jpg" alt="project-image">
-                                    <span class="gallery-icon"><i class="fa fa-plus"></i></span>
-                                </a>
-                                <div class="project-item-info">
-                                    <div class="project-item-info-content">
-                                        <h3 class="project-item-title">
-                                            <a href="projects-single.php">Riyadh City South Faz-4, Altyapı İşleri</a>
-                                        </h3>
-                                        <p class="project-cat">Altyapı Çalışması</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div><!-- shuffle item 2 end -->
-
-                        <div class="col-lg-4 col-md-6 shuffle-item" data-groups="[&quot;infrastructure&quot;,&quot;commercial&quot;]">
-                            <div class="project-img-container">
-                                <a class="gallery-popup" href="images/projects2/project30.jpg">
-                                    <img class="img-fluid" src="images/projects2/project30.jpg" alt="project-image">
-                                    <span class="gallery-icon"><i class="fa fa-plus"></i></span>
-                                </a>
-                                <div class="project-item-info">
-                                    <div class="project-item-info-content">
-                                        <h3 class="project-item-title">
-                                            <a href="projects-single.php">Silifke - Mut (Kısım 1) Yolu Projesi</a>
-                                        </h3>
-                                        <p class="project-cat">2x2 Şeritli Otoyol</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div><!-- shuffle item 3 end -->
-
-                        <div class="col-lg-4 col-md-6 shuffle-item" data-groups="[&quot;education&quot;,&quot;infrastructure&quot;]">
-                            <div class="project-img-container">
-                                <a class="gallery-popup" href="images/projects2/project40.jpg">
-                                    <img class="img-fluid" src="images/projects2/project40.jpg" alt="project-image">
-                                    <span class="gallery-icon"><i class="fa fa-plus"></i></span>
-                                </a>
-                                <div class="project-item-info">
-                                    <div class="project-item-info-content">
-                                        <h3 class="project-item-title">
-                                            <a href="projects-single.php">Eyiste Viyadüğü Projesi</a>
-                                        </h3>
-                                        <p class="project-cat">Dengeli Konsol Viyadük</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div><!-- shuffle item 4 end -->
-
-                        <div class="col-lg-4 col-md-6 shuffle-item" data-groups="[&quot;infrastructure&quot;,&quot;education&quot;]">
-                            <div class="project-img-container">
-                                <a class="gallery-popup" href="images/projects2/project50.jpg">
-                                    <img class="img-fluid" src="images/projects2/project50.jpg" alt="project-image">
-                                    <span class="gallery-icon"><i class="fa fa-plus"></i></span>
-                                </a>
-                                <div class="project-item-info">
-                                    <div class="project-item-info-content">
-                                        <h3 class="project-item-title">
-                                            <a href="projects-single.php">Dubai Vista Plajı Kuleleri Bina Projesi</a>
-                                        </h3>
-                                        <p class="project-cat">Rezidans Projesi</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div><!-- shuffle item 5 end -->
-
-                        <div class="col-lg-4 col-md-6 shuffle-item" data-groups="[&quot;residential&quot;]">
-                            <div class="project-img-container">
-                                <a class="gallery-popup" href="images/projects2/project60.jpg">
-                                    <img class="img-fluid" src="images/projects2/project60.jpg" alt="project-image">
-                                    <span class="gallery-icon"><i class="fa fa-plus"></i></span>
-                                </a>
-                                <div class="project-item-info">
-                                    <div class="project-item-info-content">
-                                        <h3 class="project-item-title">
-                                            <a href="projects-single.php">Cezayir Tizi Ouzou Otoyolu Projesi</a>
-                                        </h3>
-                                        <p class="project-cat">2x3 şeritli otoyol</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div><!-- shuffle item 6 end -->
-
-                    </div><!-- shuffle end -->
                 </div>
 
             </div><!-- Content row end -->
@@ -161,6 +59,37 @@
 
     <?php include('footer.php'); ?>
     <?php include('js-files.php'); ?>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" type="text/javascript"></script>
+    <script>
+        (() => {
+            $.get("ajax-get-projects.php?projects=gel_projelerimiz", function(data, status) {
+                let projects = JSON.parse(data);
+                console.clear();
+                console.log("DB Bağlantı Durumu: ", status);
+                let preparedHTML = "";
+                projects.forEach(project => {
+                    preparedHTML += `<div id="project-preview" class="col-lg-4 col-md-6 shuffle-item">
+                                        <div class="project-img-container">
+                                            <a class="gallery-popup" href="images/projects2/${project.project_id}.jpg">
+                                                <img class="img-fluid" src="images/projects2/${project.project_id}.jpg" alt="project-image">
+                                                <span class="gallery-icon"><i class="fa fa-plus"></i></span>
+                                            </a>
+                                            <div class="project-item-info">
+                                                <div class="project-item-info-content">
+                                                    <h3 class="project-item-title">
+                                                        <a href="inspect-project.php?projects=gel_projelerimiz&project_id=${project.project_id}"> ${project.baslik}</a>
+                                                    </h3>
+                                                    <p class="project-cat">${project.info}</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>`;
+                });
+                $("#project-wrapper").html(preparedHTML);
+            });
+        })();
+    </script>
 </body>
 
 </html>

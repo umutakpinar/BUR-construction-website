@@ -18,7 +18,7 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="banner-heading">
-                            <h1 class="banner-title">Gerçeklerştirilmiş Projeler</h1>
+                            <h1 class="banner-title">Gerçekleştirilmiş Projeler</h1>
                             <nav aria-label="breadcrumb">
                                 <ol class="breadcrumb justify-content-center">
                                     <li class="breadcrumb-item"><a href="#">Anasayfa</a></li>
@@ -46,112 +46,11 @@
                 <div class="col-12">
 
 
-                    <div class="row shuffle-wrapper">
-                        <div class="col-1 shuffle-sizer"></div>
+                    <div id="project-wrapper" class="row shuffle-wrapper">
+                        <!-- Db'den çekilen veriler burada listelenecek, dbden gelen verilerin eleman sayısı kadar div olmalı -->
+                    </div>
 
-                        <div class="col-lg-4 col-md-6 shuffle-item" data-groups="[&quot;government&quot;,&quot;healthcare&quot;]">
-                            <div class="project-img-container">
-                                <a class="gallery-popup" href="images/projects/project10.jpg">
-                                    <img class="img-fluid" src="images/projects/project10.jpg" alt="project-image">
-                                    <span class="gallery-icon"><i class="fa fa-plus"></i></span>
-                                </a>
-                                <div class="project-item-info">
-                                    <div class="project-item-info-content">
-                                        <h3 class="project-item-title">
-                                            <a href="projects-single.php"> B.U.R. Life Projesi</a>
-                                        </h3>
-                                        <p class="project-cat">Rezidans ve Ofis</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div><!-- shuffle item 1 end -->
 
-                        <div class="col-lg-4 col-md-6 shuffle-item" data-groups="[&quot;healthcare&quot;]">
-                            <div class="project-img-container">
-                                <a class="gallery-popup" href="images/projects/project20.jpg">
-                                    <img class="img-fluid" src="images/projects/project20.jpg" alt="project-image">
-                                    <span class="gallery-icon"><i class="fa fa-plus"></i></span>
-                                </a>
-                                <div class="project-item-info">
-                                    <div class="project-item-info-content">
-                                        <h3 class="project-item-title">
-                                            <a href="projects-single.php">Gebze - Orhangazi – İzmir Otoyolu Projesi</a>
-                                        </h3>
-                                        <p class="project-cat">2x3 şeritli otoyol</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div><!-- shuffle item 2 end -->
-
-                        <div class="col-lg-4 col-md-6 shuffle-item" data-groups="[&quot;infrastructure&quot;,&quot;commercial&quot;]">
-                            <div class="project-img-container">
-                                <a class="gallery-popup" href="images/projects/project30.jpg">
-                                    <img class="img-fluid" src="images/projects/project30.jpg" alt="project-image">
-                                    <span class="gallery-icon"><i class="fa fa-plus"></i></span>
-                                </a>
-                                <div class="project-item-info">
-                                    <div class="project-item-info-content">
-                                        <h3 class="project-item-title">
-                                            <a href="projects-single.php">B.U.R. Tower Projesi</a>
-                                        </h3>
-                                        <p class="project-cat"> Konut, Ofis ve Ticari Alan Projesi</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div><!-- shuffle item 3 end -->
-
-                        <div class="col-lg-4 col-md-6 shuffle-item" data-groups="[&quot;education&quot;,&quot;infrastructure&quot;]">
-                            <div class="project-img-container">
-                                <a class="gallery-popup" href="images/projects/project40.jpg">
-                                    <img class="img-fluid" src="images/projects/project40.jpg" alt="project-image">
-                                    <span class="gallery-icon"><i class="fa fa-plus"></i></span>
-                                </a>
-                                <div class="project-item-info">
-                                    <div class="project-item-info-content">
-                                        <h3 class="project-item-title">
-                                            <a href="projects-single.php">Saklıbahçe Konakları Projesi</a>
-                                        </h3>
-                                        <p class="project-cat">Villa kompleksi</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div><!-- shuffle item 4 end -->
-
-                        <div class="col-lg-4 col-md-6 shuffle-item" data-groups="[&quot;infrastructure&quot;,&quot;education&quot;]">
-                            <div class="project-img-container">
-                                <a class="gallery-popup" href="images/projects/project50.jpg">
-                                    <img class="img-fluid" src="images/projects/project50.jpg" alt="project-image">
-                                    <span class="gallery-icon"><i class="fa fa-plus"></i></span>
-                                </a>
-                                <div class="project-item-info">
-                                    <div class="project-item-info-content">
-                                        <h3 class="project-item-title">
-                                            <a href="projects-single.php">B.U.R. Tower Projesi</a>
-                                        </h3>
-                                        <p class="project-cat">Konut, Ofis ve Ticari Alan Projesi</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div><!-- shuffle item 5 end -->
-
-                        <div class="col-lg-4 col-md-6 shuffle-item" data-groups="[&quot;residential&quot;]">
-                            <div class="project-img-container">
-                                <a class="gallery-popup" href="images/projects/project60.jpg">
-                                    <img class="img-fluid" src="images/projects/project60.jpg" alt="project-image">
-                                    <span class="gallery-icon"><i class="fa fa-plus"></i></span>
-                                </a>
-                                <div class="project-item-info">
-                                    <div class="project-item-info-content">
-                                        <h3 class="project-item-title">
-                                            <a href="projects-single.php">G09 Golf Manzaralı Apartmanlar Projesi</a>
-                                        </h3>
-                                        <p class="project-cat">Rezidans Projesi</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div><!-- shuffle item 6 end -->
-
-                    </div><!-- shuffle end -->
                 </div>
 
             </div><!-- Content row end -->
@@ -161,6 +60,37 @@
 
     <?php include('footer.php'); ?>
     <?php include('js-files.php'); ?>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" type="text/javascript"></script>
+    <script>
+        (() => {
+            $.get("ajax-get-projects.php?projects=ger_projelerimiz", function(data, status) {
+                let projects = JSON.parse(data);
+                console.clear();
+                console.log("DB Bağlantı Durumu: ", status);
+                let preparedHTML = "";
+                projects.forEach(project => {
+                    preparedHTML += `<div id="project-preview" class="col-lg-4 col-md-6 shuffle-item">
+                                        <div class="project-img-container">
+                                            <a class="gallery-popup" href="images/projects/${project.project_id}.jpg">
+                                                <img class="img-fluid" src="images/projects/${project.project_id}.jpg" alt="project-image">
+                                                <span class="gallery-icon"><i class="fa fa-plus"></i></span>
+                                            </a>
+                                            <div class="project-item-info">
+                                                <div class="project-item-info-content">
+                                                    <h3 class="project-item-title">
+                                                        <a href="inspect-project.php?projects=ger_projelerimiz&project_id=${project.project_id}"> ${project.baslik}</a>
+                                                    </h3>
+                                                    <p class="project-cat">${project.info}</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>`;
+                });
+                $("#project-wrapper").html(preparedHTML);
+            });
+        })();
+    </script>
 </body>
 
 </html>

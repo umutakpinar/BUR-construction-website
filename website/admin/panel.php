@@ -29,6 +29,22 @@ if (session("login") == false) {
     <!-- Template styles-->
     <link rel="stylesheet" href="../css/style.css">
     <style>
+        ::-webkit-scrollbar {
+            width: 0.5rem;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background-color: #FFB600;
+        }
+
+        ::-webkit-scrollbar-track {
+            background-color: #F5F5F5;
+        }
+
+        ::-webkit-scrollbar-corner {
+            border-radius: 20px;
+        }
+
         body {
             font-size: 100% !important;
         }
@@ -144,6 +160,14 @@ if (session("login") == false) {
         .active-list-item {
             background-color: red !important;
         }
+
+        .text-white {
+            color: white;
+        }
+
+        .bg-blue {
+            background-color: #007BFF;
+        }
     </style>
 </head>
 
@@ -156,15 +180,10 @@ if (session("login") == false) {
                     <ul class="list-unstyled h-100 text-center py-5 d-flex flex-column justify-content-around text-dark">
                         <span style="color: darkorange;"> Aktif Admin: <span style="color: red;"> <?= $_SESSION["username"] ?></span></span>
                         <span style="color: darkorange;">Düzenlemek istediğiniz bölümü seçin: </span>
-                        <li class="d-block"><a id="header" class="list-item bg-warning p-1 rounded ws-50 d-block" href="?edit=header"> Header</a></li>
-                        <li class="d-block"><a id="anasayfa" class="list-item bg-warning p-1 rounded ws-50 d-block" href="?edit=anasayfa"> Anasayfa</a></li>
-                        <li class="d-block"><a id="hakkimizda" class="list-item bg-warning p-1 rounded ws-50 d-block" href="?edit=hakkimizda"> Hakkımızda</a></li>
                         <li class="d-block"><a id="projelerimiz" class="list-item bg-warning p-1 rounded ws-50 d-block" href="?edit=projelerimiz"> Projelerimiz</a></li>
                         <li class="d-block"><a id="hizmetlerimiz" class="list-item bg-warning p-1 rounded ws-50 d-block" href="?edit=hizmetlerimiz"> Hizmetlerimiz</a></li>
                         <li class="d-block"><a id="haberler" class="list-item bg-warning p-1 rounded ws-50 d-block" href="?edit=haberler"> Haberler</a></li>
                         <li class="d-block"><a id="iletisim" class="list-item bg-warning p-1 rounded ws-50 d-block" href="?edit=iletisim"> İletişim</a></li>
-                        <li class="d-block"><a id="footer" class="list-item bg-warning p-1 rounded ws-50 d-block" href="?edit=footer"> Footer</a></li>
-
                         <form action="../settings/admin_login.php?islem=cikis" method="post" class="d-flex justify-content-center align-items-center">
                             <button type="submit" class="btn-lg ws-50 btn-danger text-white">Logout</button>
                         </form>
@@ -178,22 +197,33 @@ if (session("login") == false) {
                 <!-- right side -->
                 <div class="container">
                     <div id="header-sec" class="jumbotron row p-0 pt-3 text-center align-items-center">
-                        <h3 class="col text-danger">B.U.R. Admin Panel</h3>
+                        <h3 class="col text-danger"><a href="./panel.php"> B.U.R. Admin Panel</a></h3>
                     </div>
-                    <div id="main-container" class="container">
+                    <div id="main-container" class="">
                         <!-- BURADA KALDIN!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
-                        <?php //Burada eğer url barında # veya boş ise bunu göster onun dışında ise gösterme
-                        echo '<div class="alert alert-danger p-5" role="alert">
+                        <?php //Burada eğer url barında # veya boş ise bunu göster onun dışında edit= id yazan id ne ise o seçeneğin .php dosyasını göster
+                        if (isset($_GET["edit"])) {
+                            $edit = $_GET["edit"];
+                            if ($edit == "projelerimiz") {
+                                include "edit_projelerimiz.php";
+                            } elseif ($edit == "haberler") {
+                                include "edit_haberler.php";
+                            } elseif ($edit == "iletisim") {
+                                include "edit_iletisim.php";
+                            } elseif ($edit == "hizmetlerimiz") {
+                                include "edit_hizmetlerimiz.php";
+                            }
+                        } else {
+                            echo '<div class="alert alert-danger p-5" role="alert">
                             <span>
                                 B.U.R. İnşaat Admin Yönetim Paneline hoşgeldiniz <b><?= session("username") ?></b> .
                                 <br>
                                 Sol üstteki ok butonuna basarak açılan menüden değişiklik yapmak istediğiniz bölümü seçin.
                             </span>
                         </div>';
-
+                        }
                         //daha sonra burada sol menüdeki başlıkalrdan hangisi urlye gönderilmişse ona göre burayı düzenleeycek kodu yazdır
                         ?>
-
                     </div>
                 </div>
             </div>
