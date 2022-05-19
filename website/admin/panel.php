@@ -168,6 +168,10 @@ if (session("login") == false) {
         .bg-blue {
             background-color: #007BFF;
         }
+
+        .h-67 {
+            height: 67%;
+        }
     </style>
 </head>
 
