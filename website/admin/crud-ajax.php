@@ -45,9 +45,13 @@ try {
         if (get("section") == "haberler") {
             /* codes */
         } else if (get("section") == "ger_projelerimiz") {
-            /* codes */
+            $query = $conn->prepare("DELETE FROM ger_projelerimiz WHERE project_id = ?");
+            $query->execute([$_POST["project_id"]]);
+            $_POST["project_id"] = "";
         } else if (get("section") == "gel_projelerimiz") {
-            /* codes */
+            $query = $conn->prepare("DELETE FROM gel_projelerimiz WHERE project_id = ?");
+            $query->execute([$_POST["project_id"]]);
+            $_POST["project_id"] = "";
         } else if (get("section") == "hizmetlerimiz") {
             /* codes */
         }

@@ -32,9 +32,11 @@
     let alert = document.querySelector("#alert");
     let list_selected_tab = document.querySelector("#list-selected-tab");
     let show_projects = document.querySelector("#show-projects");
+    var tableName;
     projeler.forEach(function(item) {
         item.addEventListener("click", function(e) {
             let html = "";
+            tableName = e.target.id;
 
             function getAndShowProjects() {
                 $.get("crud-ajax.php?action=read&section=" + e.target.id, function(data, status) {
@@ -91,11 +93,11 @@
 
             //seçilen sekmeye göre list-selected-tab öğesinin içeriğini değiştir
             if (e.target.id == "ger_projelerimiz") {
-                console.clear();
+                //console.clear();
                 console.log("Gerçekleştirilmiş Projeleri Düzenleme Seçildi");
                 getAndShowProjects();
             } else if (e.target.id == "gel_projelerimiz") {
-                console.clear();
+                //console.clear();
                 console.log("Gelecek Projeleri Düzenleme Seçildi");
                 getAndShowProjects();
             }
@@ -103,4 +105,24 @@
             //--------------------------------
         });
     });
+
+
+    function deleteProject(id) {
+        let projectId = id;
+        let islem = confirm(`${projectId} numaralı projeyi silmek istediğinize emin misiniz? Bu işlem geri alınamaz!`);
+        if (islem == true) {
+            $.ajax({
+                url: "crud-ajax.php?action=delete&id=" + projectId + "&section=" + tableName,
+                type: "POST",
+                data: "project_id=" + projectId,
+                success: function() {
+                    location.reload();
+                    console.log(`${projectId} numaralı proje başarıyla veritabanından silindi!`);
+                }
+            });
+        } else {
+            console.log("İşlem iptal edildi .");
+        }
+
+    }
 </script>
