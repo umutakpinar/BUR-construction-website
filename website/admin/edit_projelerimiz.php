@@ -116,8 +116,21 @@
                 type: "POST",
                 data: "project_id=" + projectId,
                 success: function() {
-                    location.reload();
+                    let user = "<?= $_SESSION["username"] ?>";
+
+                    $.ajax({
+                        url: "logger.php?action=log",
+                        type: "POST",
+                        data: {
+                            log_description: `${user} tarafından, ${projectId} id'li proje, ${tableName} tablosundan silindi!`,
+                            admin_name: `${user}`
+                        },
+                        success: function() {
+                            console.log("Log kaydı alındı!");
+                        }
+                    });
                     console.log(`${projectId} numaralı proje başarıyla veritabanından silindi!`);
+                    location.reload();
                 }
             });
         } else {
