@@ -7,9 +7,11 @@ try {
         if (get("section") == "haberler") {
             /* codes */
         } else if (get("section") == "ger_projelerimiz") {
-            /* codes */
+            $query = $conn->prepare("INSERT INTO ger_projelerimiz (baslik, info, icerik) VALUES (?, ?, ?)");
+            $query->execute([post("baslik"), post("info"), post("icerik")]);
         } else if (get("section") == "gel_projelerimiz") {
-            /* codes */
+            $query = $conn->prepare("INSERT INTO gel_projelerimiz (baslik, info, icerik) VALUES (?, ?, ?)");
+            $query->execute([post("baslik"), post("info"), post("icerik")]);
         } else if (get("section") == "hizmetlerimiz") {
             /* codes */
         }

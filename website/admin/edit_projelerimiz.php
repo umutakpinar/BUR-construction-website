@@ -73,7 +73,7 @@
                     html +=
                         `<div class="project-item border rounded d-flex row align-items-center justify-content-between p-2 shadow">
 
-                            <a title="Bu bölüme yeni bir proje ekle" href="buraya-proje-ekleme-sayfası-linki.php?create=${e.target.id}" class="col-12 border-right btn-lg m-0 btn-success text-center">
+                            <a title="Bu bölüme yeni bir proje ekle" onclick="return addProject()" class="col-12 border-right btn-lg m-0 btn-success text-center">
                                 <b>EKLE</b>  <i class="fas fa-plus"></i>
                             </a>
 
@@ -196,9 +196,6 @@
 
             edit_project.innerHTML = html;
         });
-
-
-
     }
 
     function cancelProject() {
@@ -227,8 +224,94 @@
                 icerik: icerik
             },
             success: function() {
-                console.log(`${tableName} tablsoundaki ${project_id} numaralı proje başarıyla güncellendi!`); //LOG KAYDI EKLE
+
+                $.ajax({ //log kaydı 
+                    url: "logger.php?action=log",
+                    type: "POST",
+                    data: {
+                        log_description: `${user} tarafından, ${tableName} tablosundaki ${project_id} id'li proje güncellendi!`,
+                        admin_name: `${user}`
+                    },
+                    success: function() {
+                        console.log("Log kaydı alındı!");
+                    }
+                });
+
+                console.log(`${tableName} tablosundaki ${project_id} numaralı proje başarıyla güncellendi!`); //LOG KAYDI EKLE
                 location.reload();
+            }
+        });
+    }
+
+    function addProject() {
+        projeler.forEach(function(item) { //bunu eklemek zorundaydım ki aşağıdaki iptal butonunun bir anlamı olsun
+            item.classList.add("inactiveLink");
+        });
+
+        show_projects.classList.add("d-none"); //önceki sayfanınn görünrülüğünü kaldırdım
+        edit_project.classList.remove("d-none"); //düzenleme sayfamın görünürlüğünü açtım ki üzerinde gözükmesin
+
+        let html = "";
+        let editing_project;
+
+        html +=
+            `
+                    <form class="d-flex flex-column justify-content-between align-content-center h-90">
+                        <span class="text-center mt-1"> <b>Proje Ekleme Arayüzü</b> <i class="fa fa-edit"></i> </span>
+                        <div class="input-group">
+                            <label for="id" title="Proje ID'si" class="input-group-prepend input-group-text rounded-0 rounded-left">ID</label>
+                            <input type="text" title="Proje ID'si" id="id" class="form-control input-group-append rounded-0 rounded-right" disabled="disabled">
+                        </div>
+                        <div class="input-group">
+                            <label for="baslik" title="Proje Başlığı" class="input-group-prepend input-group-text rounded-0 rounded-left">Baslik</label>
+                            <input type="text" title="Proje Başlığı" id="baslik" class="form-control input-group-append rounded-0 rounded-right">
+                        </div>
+
+                        <div class="input-group">
+                            <label for="info" title="Proje Bilgisi" class="input-group-prepend input-group-text rounded-0 rounded-left">Info</label>
+                            <input id="info" title="Proje Bilgisi" class="form-control input-group-append rounded-0 rounded-right">
+                        </div>
+                        <div class="input-group h-25">
+                            <label for="icerik" title="Açıklama" class="input-group-prepend input-group-text rounded-0 rounded-left clearfix">İçerik</label>
+                            <textarea id="icerik" title="Açıklama" class="form-control input-group-append h-100 rounded-0 rounded-right"></textarea>
+                        </div>
+                        <div class="d-flex flex-row justify-content-sm-center justify-content-lg-end clearfix">
+                            <button onclick="return saveNewProject()" type="button" title="Projeyi Ekle" class="btn btn-success mr-sm-0 mr-md-2 mr-lg-2">Ekle</button>
+                            <button onclick="return cancelProject()" type="button" title="Ekleme İşlemini İptal Et" class="btn btn-danger">İptal</button>
+                        </div>
+                    </form>`;
+
+        edit_project.innerHTML = html;
+
+    }
+
+    function saveNewProject() {
+        let baslik = document.getElementById("baslik").value;
+        let info = document.getElementById("info").value;
+        let icerik = document.getElementById("icerik").value;
+
+        $.ajax({
+            url: "crud-ajax.php?action=insert&section=" + tableName,
+            type: "POST",
+            data: {
+                baslik: baslik,
+                info: info,
+                icerik: icerik
+            },
+            success: function() {
+
+                $.ajax({ //log kaydı 
+                    url: "logger.php?action=log",
+                    type: "POST",
+                    data: {
+                        log_description: `${user} tarafından ${tableName} tablosuna yeni bir proje eklendi!`,
+                        admin_name: `${user}`
+                    },
+                    success: function() {
+                        console.log("Log kaydı alındı!");
+                        location.reload();
+                    }
+                });
             }
         });
     }
