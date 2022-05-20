@@ -22,6 +22,11 @@
 
                 </div>
 
+                <div title="Proje Düzenleme Arayüzü" id="edit-project" class="bg-light border rounded py-2 px-4 text-dark d-none overflow-auto">
+
+
+
+                </div>
             </div>
         </div>
     </div>
@@ -32,11 +37,13 @@
     let alert = document.querySelector("#alert");
     let list_selected_tab = document.querySelector("#list-selected-tab");
     let show_projects = document.querySelector("#show-projects");
+    let edit_project = document.querySelector("#edit-project");
     var tableName;
     projeler.forEach(function(item) {
         item.addEventListener("click", function(e) {
             let html = "";
             tableName = e.target.id;
+            edit_project.classList.add("d-none");
 
             function getAndShowProjects() {
                 $.get("crud-ajax.php?action=read&section=" + e.target.id, function(data, status) {
@@ -52,7 +59,7 @@
                             <div title="Proje İsmi" class="col-xs-6 col-md-9 p-2">
                                 ${item.baslik}
                             </div>
-                            <a title="Projeyi Düzenle" href="buraya-edit-sayfası-linki.php?edit=${e.target.id}&item_id=${item.project_id}" class="col-xs-2 col-md-1 border-right btn-lg m-0 btn-warning text-center">
+                            <a title="Projeyi Düzenle" onclick="return editProject(id=${item.project_id})"  class="col-xs-2 col-md-1 border-right btn-lg m-0 btn-warning text-center">
                                 <i class="fas fa-edit"></i>
                             </a>
                             <a title="Projeyi Sil" onclick="return deleteProject(id=${item.project_id})" class="col-xs-2 col-md-1 btn-lg btn-danger m-0 text-center">
@@ -118,7 +125,7 @@
                 success: function() {
                     let user = "<?= $_SESSION["username"] ?>";
 
-                    $.ajax({
+                    $.ajax({ //log kaydı alıyoruz
                         url: "logger.php?action=log",
                         type: "POST",
                         data: {
@@ -137,5 +144,92 @@
             console.log("İşlem iptal edildi .");
         }
 
+    }
+
+
+    async function editProject(id) {
+
+        projeler.forEach(function(item) { //bunu eklemek zorundaydım ki aşağıdaki iptal butonunun bir anlamı olsun
+            item.classList.add("inactiveLink");
+        });
+
+        show_projects.classList.add("d-none"); //önceki sayfanınn görünrülüğünü kaldırdım
+        edit_project.classList.remove("d-none"); //düzenleme sayfamın görünürlüğünü açtım ki üzerinde gözükmesin
+
+        let html = "";
+        let editing_project;
+
+        $.ajax({ //burada asenkron bir işlem olduğu için bu itemler dbden çekilene kadar beklesin diye bu işlemler bitttikten sonra then kullandım ki kod akıp gitmesin beklesin burası tamamlanınca devamını gerçekleştirsin
+            url: "crud-ajax.php?action=read&section=" + tableName,
+            type: "GET",
+            success: function(data) {
+                let myArr = JSON.parse(data);
+                editing_project = myArr.find(item => item.project_id == id);
+            }
+        }).then(() => {
+            html +=
+                `
+                    <form class="d-flex flex-column justify-content-between align-content-center h-90">
+                        <span class="text-center mt-1"> <b>Proje Düzenleme Arayüzü</b> <i class="fa fa-edit"></i> </span>
+                        <div class="input-group">
+                            <label for="id" title="Proje ID'si" class="input-group-prepend input-group-text rounded-0 rounded-left">ID</label>
+                            <input type="text" title="Proje ID'si" id="id" class="form-control input-group-append rounded-0 rounded-right" disabled="disabled" value="${editing_project.project_id}">
+                        </div>
+                        <div class="input-group">
+                            <label for="baslik" title="Proje Başlığı" class="input-group-prepend input-group-text rounded-0 rounded-left">Baslik</label>
+                            <input type="text" title="Proje Başlığı" id="baslik" class="form-control input-group-append rounded-0 rounded-right" value="${editing_project.baslik}">
+                        </div>
+
+                        <div class="input-group">
+                            <label for="info" title="Proje Bilgisi" class="input-group-prepend input-group-text rounded-0 rounded-left">Info</label>
+                            <input id="info" title="Proje Bilgisi" class="form-control input-group-append rounded-0 rounded-right" value="${editing_project.info}">
+                        </div>
+                        <div class="input-group h-25">
+                            <label for="icerik" title="Açıklama" class="input-group-prepend input-group-text rounded-0 rounded-left clearfix">İçerik</label>
+                            <textarea id="icerik" title="Açıklama" class="form-control input-group-append h-100 rounded-0 rounded-right">${editing_project.icerik}</textarea>
+                        </div>
+                        <div class="d-flex flex-row justify-content-sm-center justify-content-lg-end clearfix">
+                            <button onclick="return saveProject(id='${id}')" type="button" title="Projeyi Güncelle" class="btn btn-success mr-sm-0 mr-md-2 mr-lg-2">Kaydet</button>
+                            <button onclick="return cancelProject()" type="button" title="Güncelleme İşlemini İptal Et" class="btn btn-danger">İptal</button>
+                        </div>
+                    </form>`;
+
+            edit_project.innerHTML = html;
+        });
+
+
+
+    }
+
+    function cancelProject() {
+        let result = confirm("Yaptığınız değişikleri iptal etmek istiyor musunuz? Düzenlemeleriniz kaybolacaktır!");
+        if (result == true) {
+            console.log("Düzenleme işlemi iptal edildi.")
+            location.reload();
+        } else {
+            console.log("Düzenlemeye devam ediliyor.");
+        }
+    }
+
+    function saveProject(id) {
+        let project_id = id;
+        let baslik = document.getElementById("baslik").value;
+        let info = document.getElementById("info").value;
+        let icerik = document.getElementById("icerik").value;
+
+        $.ajax({
+            url: "crud-ajax.php?action=update&section=" + tableName,
+            type: "POST",
+            data: {
+                project_id: project_id,
+                baslik: baslik,
+                info: info,
+                icerik: icerik
+            },
+            success: function() {
+                console.log(`${tableName} tablsoundaki ${project_id} numaralı proje başarıyla güncellendi!`); //LOG KAYDI EKLE
+                location.reload();
+            }
+        });
     }
 </script>

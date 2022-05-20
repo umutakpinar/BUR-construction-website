@@ -35,9 +35,11 @@ try {
         if (get("section") == "haberler") {
             /* codes */
         } else if (get("section") == "ger_projelerimiz") {
-            /* codes */
+            $query = $conn->prepare("UPDATE ger_projelerimiz SET baslik = ?, info = ?, icerik = ? WHERE project_id = ?");
+            $query->execute([post("baslik"), post("info"), post("icerik"), post("project_id")]);
         } else if (get("section") == "gel_projelerimiz") {
-            /* codes */
+            $query = $conn->prepare("UPDATE gel_projelerimiz SET baslik = ?, info = ?, icerik = ? WHERE project_id = ?");
+            $query->execute([post("baslik"), post("info"), post("icerik"), post("project_id")]);
         } else if (get("section") == "hizmetlerimiz") {
             /* codes */
         }
