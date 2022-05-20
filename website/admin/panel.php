@@ -177,6 +177,14 @@ if (session("login") == false) {
             height: 90%;
         }
 
+        .h-85 {
+            height: 85%;
+        }
+
+        .h-97 {
+            height: 97%;
+        }
+
         .inactiveLink {
             pointer-events: none;
             cursor: default;

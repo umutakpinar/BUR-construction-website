@@ -24,8 +24,6 @@
 
                 <div title="Proje Düzenleme Arayüzü" id="edit-project" class="bg-light border rounded py-2 px-4 text-dark d-none overflow-auto">
 
-
-
                 </div>
             </div>
         </div>
@@ -279,7 +277,9 @@
                             <button onclick="return saveNewProject()" type="button" title="Projeyi Ekle" class="btn btn-success mr-sm-0 mr-md-2 mr-lg-2">Ekle</button>
                             <button onclick="return cancelProject()" type="button" title="Ekleme İşlemini İptal Et" class="btn btn-danger">İptal</button>
                         </div>
-                    </form>`;
+                    </form>
+                    
+                `;
 
         edit_project.innerHTML = html;
 
@@ -300,7 +300,7 @@
             },
             success: function() {
 
-                $.ajax({ //log kaydı 
+                $.ajax({ //log kaydı
                     url: "logger.php?action=log",
                     type: "POST",
                     data: {
