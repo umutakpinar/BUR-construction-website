@@ -64,12 +64,12 @@
 
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" type="text/javascript"></script>
     <script>
+        let preparedHTML = "";
         (() => {
             $.get("ajax-get-projects.php?projects=gel_projelerimiz", function(data, status) {
                 let projects = JSON.parse(data);
                 console.clear();
                 console.log("DB Bağlantı Durumu: ", status);
-                let preparedHTML = "";
                 projects.forEach(project => {
                     preparedHTML += `<div id="project-preview" class="col-lg-4 col-md-6 shuffle-item">
                                         <div class="project-img-container">
@@ -88,6 +88,7 @@
                                         </div>
                                     </div>`;
                 });
+            }).then(() => {
                 $("#project-wrapper").html(preparedHTML);
             });
         })();

@@ -79,9 +79,9 @@
                                 </div>
                             </div>`;
                     });
-                    console.log(html);
-                    hizmetler_tablo.innerHTML = html;
                 }
+            }).then(() => {
+                hizmetler_tablo.innerHTML = html;
             });
         })();
     </script>
