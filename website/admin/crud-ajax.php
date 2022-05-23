@@ -13,7 +13,8 @@ try {
             $query = $conn->prepare("INSERT INTO gel_projelerimiz (baslik, info, icerik) VALUES (?, ?, ?)");
             $query->execute([post("baslik"), post("info"), post("icerik")]);
         } else if (get("section") == "hizmetlerimiz") {
-            /* codes */
+            $query = $conn->prepare("INSERT INTO hizmetlerimiz (hizmet_adi, aciklama) VALUES (?, ?)");
+            $query->execute([post("hizmet_adi"), post("aciklama")]);
         }
     } else if (get("action") == "read") {
         if (get("section") == "haberler") {
@@ -46,7 +47,8 @@ try {
             $query = $conn->prepare("UPDATE gel_projelerimiz SET baslik = ?, info = ?, icerik = ? WHERE project_id = ?");
             $query->execute([post("baslik"), post("info"), post("icerik"), post("project_id")]);
         } else if (get("section") == "hizmetlerimiz") {
-            /* codes */
+            $query = $conn->prepare("UPDATE hizmetlerimiz SET hizmet_adi = ?, aciklama = ? WHERE hizmet_id = ? ");
+            $query->execute([post("hizmet_adi"), post("aciklama"), post("hizmet_id")]);
         }
     } else if (get("action") == "delete") {
         if (get("section") == "haberler") {
