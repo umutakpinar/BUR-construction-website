@@ -19,11 +19,15 @@
 
 
                 <div id="show-projects" class="container bg-light border rounded py-2 px-4 d-none h-100 text-dark overflow-auto">
-
+                    <div class="h-100 w-100 text-cemter container d-flex align-items-center display-3 justify-content-center pb-5">
+                        <h1 class="display-3">Yükleniyor ...</h1>
+                    </div>
                 </div>
 
                 <div title="Proje Düzenleme Arayüzü" id="edit-project" class="bg-light border rounded py-2 px-4 text-dark d-none overflow-auto">
-
+                    <div class="h-100 w-100 text-cemter container d-flex align-items-center display-3 justify-content-center pb-5">
+                        <h1 class="display-3">Yükleniyor ...</h1>
+                    </div>
                 </div>
             </div>
         </div>
