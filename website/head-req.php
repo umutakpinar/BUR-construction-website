@@ -24,3 +24,20 @@
 <link rel="stylesheet" href="plugins/colorbox/colorbox.css">
 <!-- Template styles-->
 <link rel="stylesheet" href="css/style.css">
+<style>
+    ::-webkit-scrollbar {
+        width: 0.5rem;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background-color: #FFB600;
+    }
+
+    ::-webkit-scrollbar-track {
+        background-color: #F5F5F5;
+    }
+
+    ::-webkit-scrollbar-corner {
+        border-radius: 20px;
+    }
+</style>

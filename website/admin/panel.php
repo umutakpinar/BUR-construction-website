@@ -221,8 +221,7 @@ if (session("login") == false) {
                         <h3 class="col text-danger"><a href="./panel.php"> B.U.R. Admin Panel</a></h3>
                     </div>
                     <div id="main-container" class="">
-                        <!-- BURADA KALDIN!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
-                        <?php //Burada eğer url barında # veya boş ise bunu göster onun dışında edit= id yazan id ne ise o seçeneğin .php dosyasını göster
+                        <?php
                         if (isset($_GET["edit"])) {
                             $edit = $_GET["edit"];
                             if ($edit == "projelerimiz") {
@@ -243,7 +242,6 @@ if (session("login") == false) {
                             </span>
                         </div>';
                         }
-                        //daha sonra burada sol menüdeki başlıkalrdan hangisi urlye gönderilmişse ona göre burayı düzenleeycek kodu yazdır
                         ?>
                     </div>
                 </div>

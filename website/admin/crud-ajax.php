@@ -29,7 +29,10 @@ try {
             $results = $query->fetchAll(PDO::FETCH_ASSOC);
             print_r(json_encode($results));
         } else if (get("section") == "hizmetlerimiz") {
-            /* codes henüz databasede bu tablo oluşturulmadı*/
+            $query = $conn->prepare("SELECT * FROM hizmetlerimiz");
+            $query->execute();
+            $results = $query->fetchAll(PDO::FETCH_ASSOC);
+            print_r(json_encode($results));
         } else if (get("section") == "iletisim") {
             /* codes databasede tablo var ancak içerisi doldurulmadı*/
         }
@@ -57,7 +60,9 @@ try {
             $query->execute([$_POST["project_id"]]);
             $_POST["project_id"] = "";
         } else if (get("section") == "hizmetlerimiz") {
-            /* codes */
+            $query = $conn->prepare("DELETE FROM hizmetlerimiz WHERE hizmet_id = ?");
+            $query->execute([$_POST["hizmet_id"]]);
+            $_POST["hizmet_id"] = "";
         }
     } else {
         echo "Bir şeyler ters gitti";

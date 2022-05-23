@@ -46,7 +46,9 @@
                 <div class="col-12">
 
                     <div id="project-wrapper" class="row shuffle-wrapper">
-                        <!-- Db'den çekilen veriler burada listelenecek, dbden gelen verilerin eleman sayısı kadar div olmalı -->
+                        <div id="prelaoder" class="h-100 w-100 text-cemter container d-flex align-items-center display-3 justify-content-center pb-5">
+                            <h1 class="display-3">Yükleniyor ...</h1>
+                        </div>
                     </div>
 
 
