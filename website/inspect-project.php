@@ -116,15 +116,6 @@
                                 <div class="post-tags">
                                     ${selected_proje.info.split(",").map(tag => `<a>${tag}</a>`).join("")}
                                 </div>
-                                <div class="share-items">
-                                    <ul class="post-social-icons list-unstyled">
-                                        <li class="social-icons-head">Share:</li>
-                                        <li><a href="https://www.facebook.com/dialog/feed?app_id=900336133430442&display=popup&title=@(Sharetitle)&caption=[@(Sharecaption)]&amp; description=@(Sharedescription)&link=@(Sharelink)&picture=@(ViewBag.ShareImage) &target=" _blank" title="Facebokta paylaş" onclick="window.open(this.href,' targetWindow','toolbar=no,location=0, status=no,menubar=no,scrollbars=yes,resizable=yes,width=630,height=250'); return false"><i class="fab fa-facebook-f"></i></a></li>
-                                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                        <li><a href="#"><i class="fab fa-google-plus"></i></a></li>
-                                        <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
-                                    </ul>
-                                </div>
                             </div>
 
                         </div>

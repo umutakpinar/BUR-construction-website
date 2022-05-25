@@ -12,17 +12,11 @@
             <div class="col-md-8">
                 <div class="ts-newsletter row align-items-center">
                     <div class="col-md-5 newsletter-introtext">
-                        <h4 class="text-white mb-0">Yeniliklerden haberdar olun!</h4>
-                        <p class="text-white">Hakkımızdaki en son güncellemeleri ilk siz öğrenin</p>
+
                     </div>
 
                     <div class="col-md-7 newsletter-form">
-                        <form action="#" method="post">
-                            <div class="form-group">
-                                <label for="newsletter-email" class="content-hidden">Newsletter Email</label>
-                                <input type="email" name="email" id="newsletter-email" class="form-control form-control-lg" placeholder="Mail adresinizi girin ve enter'a basın." autocomplete="off">
-                            </div>
-                        </form>
+
                     </div>
                 </div><!-- Newsletter end -->
             </div><!-- Col end -->
