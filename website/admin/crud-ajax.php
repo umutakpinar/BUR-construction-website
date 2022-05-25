@@ -30,7 +30,7 @@ try {
             $query = $conn->prepare("SELECT * FROM ger_projelerimiz");
             $query->execute();
             $results = $query->fetchAll(PDO::FETCH_ASSOC);
-            print_r(json_encode($results)); //gerçekleştirilen projeleri json formatında geri döndür.
+            print_r(json_encode($results));
         } else if (get("section") == "gel_projelerimiz") {
             $query = $conn->prepare("SELECT * FROM gel_projelerimiz");
             $query->execute();
