@@ -10,7 +10,6 @@
 <body class="body-inner">
     <?php include('topbar.php'); ?>
     <?php include('header.php'); ?>
-
     <!-- Contact Page Banner -->
     <div id="banner-area" class="banner-area" style="background-image:url(images/banner/banner1.jpg)">
         <div class="banner-text">
@@ -90,15 +89,13 @@
             <div class="row">
                 <div class="col-md-12">
                     <h3 class="column-title">Bize ulaşın</h3>
-                    <!-- contact form works with formspree.io  -->
-                    <!-- contact form activation doc: https://docs.themefisher.com/constra/contact-form/ -->
                     <form id="contact-form" action="#" method="post" role="form">
                         <div class="error-container"></div>
                         <div class="row">
                             <div class="col-md-4">
                                 <div class="form-group">
                                     <label>Ad Soyad</label>
-                                    <input class="form-control form-control-name" name="name" id="name" type="text" required placeholder="Adınız... (A-Z/a-z)" minlength="3" pattern="[a-zA-Z\s]+">
+                                    <input class="form-control form-control-name" name="name" id="adSoyad" type="text" required placeholder="Adınız... (A-Z/a-z)" minlength="3" pattern="[a-zA-Z\s]+">
                                 </div>
                             </div>
                             <div class="col-md-4">
@@ -110,17 +107,17 @@
                             <div class="col-md-4">
                                 <div class="form-group">
                                     <label>Konu</label>
-                                    <input class="form-control form-control-subject" name="subject" id="subject" placeholder="Adınız... (A-Z/a-z)" minlength="3" pattern="[a-zA-Z\s]+" required>
+                                    <input class="form-control form-control-subject" name="subject" id="konu" placeholder="Konu" minlength="3" pattern="[a-zA-Z\s]+" required>
 
                                 </div>
                             </div>
                         </div>
                         <div class="form-group">
                             <label>Mesaj</label>
-                            <textarea class="form-control form-control-message" name="message" id="message" placeholder="Mesajınızı yazınız... (Maks. 500)" rows="10" required></textarea>
+                            <textarea class="form-control form-control-message" name="message" id="mesaj" placeholder="Mesajınızı yazınız... (Maks. 500)" rows="10" required></textarea>
                         </div>
                         <div class="text-right"><br>
-                            <button class="btn btn-primary solid blank" type="submit">Gönder</button>
+                            <button id="mesajGonder" class="btn btn-primary solid blank" onclick="return gonder()">Gönder</button>
                         </div>
                     </form>
                 </div>
@@ -131,6 +128,31 @@
 
     <?php include('footer.php'); ?>
     <?php include('js-files.php'); ?>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" type="text/javascript"></script>
+    <script>
+        function gonder() {
+            let adSoyad = document.getElementById("adSoyad").value;
+            let email = document.getElementById("email").value;
+            let konu = document.getElementById("konu").value;
+            let mesaj = document.getElementById("mesaj").value;
+            $.ajax({
+                url: "./admin/crud-ajax.php?action=insert&section=iletisim",
+                type: "POST",
+                data: {
+                    adSoyad: adSoyad,
+                    email: email,
+                    konu: konu,
+                    mesaj: mesaj
+                },
+                success: function() {
+                    location.reload();
+                }
+            }).then(() => {
+                alert("Mesajınız başarıyla gönderildi.");
+            });
+        }
+    </script>
 </body>
 
 </html>
