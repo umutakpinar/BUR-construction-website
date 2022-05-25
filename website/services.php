@@ -69,7 +69,7 @@
                                     </div>
                                     <div class="d-flex">
                                         <div class="ts-service-box-img">
-                                            <img loading="lazy" src="images/service-icons/service-icon${hizmet.hizmet_id}.png" alt="service-icon">
+                                            <img src="images/service-icons/service-icon${hizmet.hizmet_id}.png" alt="service-icon">
                                         </div>
                                         <div class="ts-service-info">
                                             <h3 class="service-box-title"><a href="./contact.php">${hizmet.hizmet_adi}</a></h3>

@@ -44,7 +44,6 @@
                         <p class="slider-description lead" data-animation-in="slideInRight">Sorularınızı mühendislerimiz ve uzman ekibimize sorun cevaplayalım!</p>
                         <div data-animation-in="slideInLeft">
                             <a href="contact.php" class="slider btn btn-primary" aria-label="contact-with-us">Sizi arayalım!</a>
-                            <a href="./team.php" class="slider btn btn-primary border" aria-label="learn-more-about-us">Ekibi görün</a>
                         </div>
                     </div>
                 </div>

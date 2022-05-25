@@ -8,126 +8,12 @@
         </div>
         <!--/ Title row end -->
 
-        <div class="row">
-            <div class="col-lg-4 col-md-6 mb-4">
-                <div class="latest-post">
-                    <div class="latest-post-media">
-                        <a href="news-single.php" class="latest-post-img">
-                            <img loading="lazy" class="img-fluid" src="images/news/news1.jpg" alt="img">
-                        </a>
-                    </div>
-                    <div class="post-body">
-                        <h4 class="post-title">
-                            <a href="news-single.php" class="d-inline-block">We Just Completes $17.6 million Medical Clinic in Mid-Missouri</a>
-                        </h4>
-                        <div class="latest-post-meta">
-                            <span class="post-item-date">
-                                <i class="fa fa-clock-o"></i> July 20, 2017
-                            </span>
-                        </div>
-                    </div>
-                </div><!-- Latest post end -->
-            </div><!-- 1st post col end -->
+        <div id="haberler-tab" class="row">
 
-            <div class="col-lg-4 col-md-6 mb-4">
-                <div class="latest-post">
-                    <div class="latest-post-media">
-                        <a href="news-single.php" class="latest-post-img">
-                            <img loading="lazy" class="img-fluid" src="images/news/news2.jpg" alt="img">
-                        </a>
-                    </div>
-                    <div class="post-body">
-                        <h4 class="post-title">
-                            <a href="news-single.php" class="d-inline-block">Thandler Airport Water Reclamation Facility Expansion Project Named</a>
-                        </h4>
-                        <div class="latest-post-meta">
-                            <span class="post-item-date">
-                                <i class="fa fa-clock-o"></i> June 17, 2017
-                            </span>
-                        </div>
-                    </div>
-                </div><!-- Latest post end -->
-            </div><!-- 2nd post col end -->
+            <div id="prelaoder" class="h-100 w-100 text-cemter container d-flex align-items-center display-3 justify-content-center pb-5">
+                <h1 class="display-3">Yükleniyor ...</h1>
+            </div>
 
-            <div class="col-lg-4 col-md-6 mb-4">
-                <div class="latest-post">
-                    <div class="latest-post-media">
-                        <a href="news-single.php" class="latest-post-img">
-                            <img loading="lazy" class="img-fluid" src="images/news/news3.jpg" alt="img">
-                        </a>
-                    </div>
-                    <div class="post-body">
-                        <h4 class="post-title">
-                            <a href="news-single.php" class="d-inline-block">Silicon Bench and Cornike Begin Construction Solar Facilities</a>
-                        </h4>
-                        <div class="latest-post-meta">
-                            <span class="post-item-date">
-                                <i class="fa fa-clock-o"></i> Aug 13, 2017
-                            </span>
-                        </div>
-                    </div>
-                </div><!-- Latest post end -->
-            </div><!-- 3rd post col end -->
-
-            <div class="col-lg-4 col-md-6 mb-4">
-                <div class="latest-post">
-                    <div class="latest-post-media">
-                        <a href="news-single.php" class="latest-post-img">
-                            <img loading="lazy" class="img-fluid" src="images/news/news1.jpg" alt="img">
-                        </a>
-                    </div>
-                    <div class="post-body">
-                        <h4 class="post-title">
-                            <a href="news-single.php" class="d-inline-block">We Just Completes $17.6 million Medical Clinic in Mid-Missouri</a>
-                        </h4>
-                        <div class="latest-post-meta">
-                            <span class="post-item-date">
-                                <i class="fa fa-clock-o"></i> July 20, 2017
-                            </span>
-                        </div>
-                    </div>
-                </div><!-- Latest post end -->
-            </div><!-- 1st post col end -->
-
-            <div class="col-lg-4 col-md-6 mb-4">
-                <div class="latest-post">
-                    <div class="latest-post-media">
-                        <a href="news-single.php" class="latest-post-img">
-                            <img loading="lazy" class="img-fluid" src="images/news/news2.jpg" alt="img">
-                        </a>
-                    </div>
-                    <div class="post-body">
-                        <h4 class="post-title">
-                            <a href="news-single.php" class="d-inline-block">Thandler Airport Water Reclamation Facility Expansion Project Named</a>
-                        </h4>
-                        <div class="latest-post-meta">
-                            <span class="post-item-date">
-                                <i class="fa fa-clock-o"></i> June 17, 2017
-                            </span>
-                        </div>
-                    </div>
-                </div><!-- Latest post end -->
-            </div><!-- 2nd post col end -->
-
-            <div class="col-lg-4 col-md-6 mb-4">
-                <div class="latest-post">
-                    <div class="latest-post-media">
-                        <a href="news-single.php" class="latest-post-img">
-                            <img loading="lazy" class="img-fluid" src="images/news/news3.jpg" alt="img">
-                        </a>
-                    </div>
-                    <div class="post-body">
-                        <h4 class="post-title">
-                            <a href="news-single.php" class="d-inline-block">Silicon Bench and Cornike Begin Construction Solar Facilities</a>
-                        </h4>
-                        <div class="latest-post-meta">
-                            <span class="post-item-date">
-                                <i class="fa fa-clock-o"></i> Aug 13, 2017
-                            </span>
-                        </div>
-                    </div>
-                </div><!-- Latest post end -->
-            </div><!-- 3rd post col end -->
         </div>
 
         <!--/ Content row end -->
@@ -135,4 +21,44 @@
     </div>
     <!--/ Container end -->
 </section>
-<!--/ News end -->
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" type="text/javascript"></script>
+<script>
+    let haberler_tab = document.querySelector("#haberler-tab");
+    let html = "";
+    let haberler = [];
+    (() => {
+        $.ajax({
+            url: "./admin/crud-ajax.php?action=read&section=haberler",
+            type: "GET",
+            success: function(data) {
+                haberler = JSON.parse(data);
+                haberler.forEach((haber) => {
+                    html +=
+                        `<div class="col-lg-4 col-md-6 mb-4">
+                        <div class="latest-post">
+                            <div class="latest-post-media">
+                                <a href="haber-detay.php?id=${haber.haber_id}" class="latest-post-img">
+                                    <img class="img-fluid" src="images/news/news${haber.haber_id}.jpg" alt="img">
+                                </a>
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-title">
+                                    <a href="haber-detay.php?id=${haber.haber_id}" class="d-inline-block">${haber.baslik} </a>
+                                </h4>
+                                <div class="latest-post-meta">
+                                    <p><small> ${haber.icerik.slice(0,59)}...</small></p>
+                                    <span class="post-item-date">
+                                        <i class="fa fa-clock-o"></i> ${haber.yayin_tarihi}
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>`;
+                });
+            }
+        }).then(() => {
+            haberler_tab.innerHTML = html;
+        });
+    })();
+</script>

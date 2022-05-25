@@ -13,6 +13,18 @@
     <?php include('main.php '); ?>
     <?php include('footer.php'); ?>
     <?php include('js-files.php'); ?>
+
+    <script>
+        (async () => {
+
+        })().then(() => {
+            let slick_dots = document.querySelectorAll(".slick-dots");
+            slick_dots.forEach(item => item.classList.add("bg-dark"));
+        });
+    </script>
+
 </body>
+
+
 
 </html>

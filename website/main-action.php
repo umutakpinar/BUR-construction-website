@@ -1,11 +1,11 @@
 <!-- Action button -->
 <section class="call-to-action-box no-padding">
     <div class="container">
-        <div class="action-style-box">
+        <div class="action-style-box rounded">
             <div class="row align-items-center">
                 <div class="col-md-8 text-center text-md-left">
                     <div class="call-to-action-text">
-                        <h3 class="action-title">İddialıyız! Tüm ihtiyaçlarınızı karşılıyoruz!</h3>
+                        <h3 class="action-title">Tüm ihtiyaçlarınız <span class="text-dark">B.U.R.</span>'da!</h3>
                     </div>
                 </div>
                 <div class="col-md-4 text-center text-md-right mt-3 mt-md-0">

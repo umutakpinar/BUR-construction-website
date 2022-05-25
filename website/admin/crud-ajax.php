@@ -18,7 +18,10 @@ try {
         }
     } else if (get("action") == "read") {
         if (get("section") == "haberler") {
-            /* codes databasede tablo var ancak içerisi doldurulmadı*/
+            $query = $conn->prepare("SELECT * FROM haberler");
+            $query->execute();
+            $results = $query->fetchAll(PDO::FETCH_ASSOC);
+            print_r(json_encode($results));
         } else if (get("section") == "ger_projelerimiz") {
             $query = $conn->prepare("SELECT * FROM ger_projelerimiz");
             $query->execute();

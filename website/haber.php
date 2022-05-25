@@ -26,11 +26,11 @@
                                 </ol>
                             </nav>
                         </div>
-                    </div><!-- Col end -->
-                </div><!-- Row end -->
-            </div><!-- Container end -->
-        </div><!-- Banner text end -->
-    </div><!-- Banner area end -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 
