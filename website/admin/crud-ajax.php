@@ -16,6 +16,9 @@ try {
         } else if (get("section") == "hizmetlerimiz") {
             $query = $conn->prepare("INSERT INTO hizmetlerimiz (hizmet_adi, aciklama) VALUES (?, ?)");
             $query->execute([post("hizmet_adi"), post("aciklama")]);
+        } else if (get("section") == "iletisim") {
+            $query = $conn->prepare("INSERT INTO iletisim (adSoyad, email, konu, mesaj) VALUES (?, ?, ?, ?)");
+            $query->execute([post("adSoyad"), post("email"), post("konu"), post("mesaj")]);
         }
     } else if (get("action") == "read") {
         if (get("section") == "haberler") {
@@ -39,7 +42,10 @@ try {
             $results = $query->fetchAll(PDO::FETCH_ASSOC);
             print_r(json_encode($results));
         } else if (get("section") == "iletisim") {
-            /* codes databasede tablo var ancak içerisi doldurulmadı*/
+            $query = $conn->prepare("SELECT * FROM iletisim");
+            $query->execute();
+            $results = $query->fetchAll(PDO::FETCH_ASSOC);
+            print_r(json_encode($results));
         }
     } else if (get("action") == "update") {
         if (get("section") == "haberler") {
@@ -71,6 +77,10 @@ try {
             $query = $conn->prepare("DELETE FROM hizmetlerimiz WHERE hizmet_id = ?");
             $query->execute([$_POST["hizmet_id"]]);
             $_POST["hizmet_id"] = "";
+        } else if (get("section") == "iletisim") {
+            $query = $conn->prepare("DELETE FROM iletisim WHERE iletisim_id = ?");
+            $query->execute([$_POST["iletisim_id"]]);
+            $_POST["iletisim_id"] = "";
         }
     } else {
         echo "Bir şeyler ters gitti";
