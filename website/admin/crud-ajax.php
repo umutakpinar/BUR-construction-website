@@ -5,7 +5,8 @@ include "../settings/helper_methods.php";
 try {
     if (get("action") == "insert") {
         if (get("section") == "haberler") {
-            /* codes */
+            $query = $conn->prepare("INSERT INTO haberler (baslik, icerik, tags) VALUES (?, ?, ?)");
+            $query->execute([post("baslik"), post("icerik"), post("tags")]);
         } else if (get("section") == "ger_projelerimiz") {
             $query = $conn->prepare("INSERT INTO ger_projelerimiz (baslik, info, icerik) VALUES (?, ?, ?)");
             $query->execute([post("baslik"), post("info"), post("icerik")]);
@@ -42,7 +43,8 @@ try {
         }
     } else if (get("action") == "update") {
         if (get("section") == "haberler") {
-            /* codes */
+            $query = $conn->prepare("UPDATE haberler SET baslik = ?, icerik = ?, yayin_tarihi = CURRENT_TIMESTAMP, tags = ? WHERE haber_id = ?");
+            $query->execute([post("baslik"), post("icerik"), post("tags"), post("haber_id")]);
         } else if (get("section") == "ger_projelerimiz") {
             $query = $conn->prepare("UPDATE ger_projelerimiz SET baslik = ?, info = ?, icerik = ? WHERE project_id = ?");
             $query->execute([post("baslik"), post("info"), post("icerik"), post("project_id")]);
@@ -55,7 +57,8 @@ try {
         }
     } else if (get("action") == "delete") {
         if (get("section") == "haberler") {
-            /* codes */
+            $query = $conn->prepare("DELETE FROM haberler WHERE haber_id = ?");
+            $query->execute([post("haber_id")]);
         } else if (get("section") == "ger_projelerimiz") {
             $query = $conn->prepare("DELETE FROM ger_projelerimiz WHERE project_id = ?");
             $query->execute([$_POST["project_id"]]);

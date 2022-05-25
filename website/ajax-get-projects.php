@@ -16,9 +16,3 @@ if (get("projects")) {
 } else {
     echo "Bir şeyler ters gitti...";
 }
-
-
-// $projects = $conn->prepare("SELECT * FROM gel_projelerimiz");
-// $projects->execute();
-// $projects_result = $projects->fetchAll(PDO::FETCH_ASSOC);
-// print_r(json_encode($projects_result));
